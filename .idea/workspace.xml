@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c6e908-a5ed-488d-8665-d2161cb1dea9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PPOC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PPOC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines.egg-info/SOURCES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/docs/environments.md" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/docs/environments.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/tmaze.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/tmaze.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/ymaze.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_blue.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_blue.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_green.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_green.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_grey.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_grey.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_purple.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_purple.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_red.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_red.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_yellow.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_yellow.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_blue.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_blue.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_green.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_green.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_grey.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_grey.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_purple.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_purple.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_red.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_red.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_yellow.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_yellow.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/miniworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/miniworld.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/images/ymaze_0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/manual_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/manual_control.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+            <state relative-caret-position="440">
+              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
               <folding>
                 <element signature="e#23#82#0" expanded="true" />
               </folding>
@@ -108,7 +83,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gen_seg</find>
       <find>usertext</find>
       <find>ice</find>
       <find>pi.ter</find>
@@ -138,6 +112,7 @@
       <find>act</find>
       <find>ConfigProto()</find>
       <find>tf.ConfigProto(</find>
+      <find>tf..compat.v1.Session</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/baselines/OC_learning_alpha</dir>
@@ -150,14 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/baselines/DEOC/run_mujoco.py" />
-        <option value="$PROJECT_DIR$/baselines/DEOC_term/pposgd_simple.py" />
-        <option value="$PROJECT_DIR$/baselines/DEOC_term/run_mujoco.py" />
-        <option value="$PROJECT_DIR$/baselines/ppoc_Interest_Functions/mlp_policy.py" />
-        <option value="$PROJECT_DIR$/baselines/ppoc_Interest_Functions/pposgd_simple.py" />
-        <option value="$PROJECT_DIR$/baselines/ppoc_Interest_Functions/run_mujoco.py" />
-        <option value="$PROJECT_DIR$/baselines/DEOC/pposgd_simple.py" />
-        <option value="$PROJECT_DIR$/baselines/ppo1/cnn_policy.py" />
         <option value="$PROJECT_DIR$/baselines/ppo1/run_atari.py" />
         <option value="$PROJECT_DIR$/baselines/ppo1/run_mujoco.py" />
         <option value="$PROJECT_DIR$/baselines/ppo1/pposgd_simple.py" />
@@ -199,12 +166,20 @@
         <option value="$PROJECT_DIR$/baselines/DEOC_onlytermination/pposgd_simple.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/tf_util.py" />
+        <option value="$PROJECT_DIR$/tf_test.py" />
         <option value="$PROJECT_DIR$/baselines/common/tf_util.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/gym-extensions-master/multitask_benchmarks/run_trpo.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/gym-extensions-master/multitask_benchmarks/utils.py" />
+        <option value="$PROJECT_DIR$/gym-extensions-master/multitask_benchmarks/run_trpo.py" />
+        <option value="$PROJECT_DIR$/gym-extensions-master/multitask_benchmarks/utils.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/deepq/simple.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/tf_test.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="72" />
     <option name="y" value="27" />
     <option name="width" value="924" />
@@ -676,14 +651,7 @@
       <workItem from="1589609041566" duration="1865000" />
       <workItem from="1589953339396" duration="811000" />
       <workItem from="1589954277886" duration="8539000" />
-      <workItem from="1589963393311" duration="6876000" />
-    </task>
-    <task id="LOCAL-00163" summary="Miniworld hyperparameters in PPOC">
-      <created>1577845357057</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1577845357057</updated>
+      <workItem from="1589963393311" duration="7602000" />
     </task>
     <task id="LOCAL-00164" summary="Added transfer setting in comments for halfcheetah and hopperice">
       <created>1577926548542</created>
@@ -1021,16 +989,24 @@
       <option name="project" value="LOCAL" />
       <updated>1589965683537</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="Adding miniworld">
+      <created>1589978524154</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1589978524154</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1432644000" />
+    <option name="totallyTimeSpent" value="1433370000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="72" y="27" width="1848" height="1053" extended-state="6" />
+    <frame x="72" y="27" width="924" height="1053" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.120976694" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24829157" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1046,7 +1022,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008301" side_tool="true" weight="0.29805616" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.24536532" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3293348" />
-      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.25408942" />
+      <window_info anchor="bottom" id="File Transfer" order="13" visible="true" weight="0.25408942" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1495,8 +1471,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        <state relative-caret-position="440">
+          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
           <folding>
             <element signature="e#23#82#0" expanded="true" />
           </folding>

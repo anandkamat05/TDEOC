@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c6e908-a5ed-488d-8665-d2161cb1dea9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/tf_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/tf_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselines/common/tf_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/common/tf_util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,13 +44,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baselines/common/tf_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="211" column="24" selection-start-line="211" selection-start-column="24" selection-end-line="211" selection-end-column="24" />
+            <state relative-caret-position="153">
+              <caret line="209" column="40" selection-start-line="209" selection-start-column="29" selection-end-line="209" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/anaconda3/envs/TDEOC/lib/python3.7/site-packages/tensorflow/core/protobuf/config_pb2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="521" lean-forward="true" selection-start-line="521" selection-end-line="521" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
@@ -83,8 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>usertext</find>
-      <find>ice</find>
       <find>pi.ter</find>
       <find>color</find>
       <find>add_point</find>
@@ -111,8 +120,10 @@
       <find>num_options</find>
       <find>act</find>
       <find>ConfigProto()</find>
-      <find>tf.ConfigProto(</find>
       <find>tf..compat.v1.Session</find>
+      <find>tf.ConfigProto(</find>
+      <find>configpr</find>
+      <find>ConfigProto(</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/baselines/OC_learning_alpha</dir>
@@ -166,9 +177,7 @@
         <option value="$PROJECT_DIR$/baselines/DEOC_onlytermination/pposgd_simple.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/tf_util.py" />
         <option value="$PROJECT_DIR$/tf_test.py" />
-        <option value="$PROJECT_DIR$/baselines/common/tf_util.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/gym-extensions-master/multitask_benchmarks/run_trpo.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/gym-extensions-master/multitask_benchmarks/utils.py" />
         <option value="$PROJECT_DIR$/gym-extensions-master/multitask_benchmarks/run_trpo.py" />
@@ -176,10 +185,12 @@
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/deepq/simple.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/tf_test.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" />
+        <option value="$PROJECT_DIR$/baselines/common/tf_util.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/tf_util.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="72" />
     <option name="y" value="27" />
     <option name="width" value="924" />
@@ -197,6 +208,17 @@
             <path>
               <item name="Diversity_Enriched_OC_master" type="b2602c69:ProjectViewProjectNode" />
               <item name="Diversity_Enriched_OC_master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Diversity_Enriched_OC_master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diversity_Enriched_OC_master" type="462c0819:PsiDirectoryNode" />
+              <item name="baselines" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Diversity_Enriched_OC_master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diversity_Enriched_OC_master" type="462c0819:PsiDirectoryNode" />
+              <item name="baselines" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -651,28 +673,7 @@
       <workItem from="1589609041566" duration="1865000" />
       <workItem from="1589953339396" duration="811000" />
       <workItem from="1589954277886" duration="8539000" />
-      <workItem from="1589963393311" duration="7602000" />
-    </task>
-    <task id="LOCAL-00164" summary="Added transfer setting in comments for halfcheetah and hopperice">
-      <created>1577926548542</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1577926548543</updated>
-    </task>
-    <task id="LOCAL-00165" summary="Epoch mentions in file name not in weights folder">
-      <created>1578081131419</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1578081131419</updated>
-    </task>
-    <task id="LOCAL-00166" summary="Calculating diversity for discrete action spaces">
-      <created>1578117910935</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1578117910935</updated>
+      <workItem from="1589963393311" duration="9357000" />
     </task>
     <task id="LOCAL-00167" summary="Added better visualization for TMaze and OneRoom.&#10;Switched to continuous control for TMaze.">
       <created>1578193752871</created>
@@ -996,17 +997,38 @@
       <option name="project" value="LOCAL" />
       <updated>1589978524154</updated>
     </task>
-    <option name="localTasksCounter" value="213" />
+    <task id="LOCAL-00213" summary="Adding miniworld">
+      <created>1589979165143</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1589979165143</updated>
+    </task>
+    <task id="LOCAL-00214" summary="Adding miniworld">
+      <created>1589979256231</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1589979256231</updated>
+    </task>
+    <task id="LOCAL-00215" summary="Tf version error fix">
+      <created>1589980199979</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1589980199979</updated>
+    </task>
+    <option name="localTasksCounter" value="216" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1433370000" />
+    <option name="totallyTimeSpent" value="1435125000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="72" y="27" width="924" height="1053" extended-state="4" />
+    <frame x="72" y="27" width="1848" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24829157" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.120976694" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1106,7 +1128,6 @@
       <path value="$PROJECT_DIR$/baselines" />
       <path value="$PROJECT_DIR$/gym-extensions-multitask" />
     </ignored-roots>
-    <MESSAGE value="Added tmaze env to plot" />
     <MESSAGE value="Plotting terminations" />
     <MESSAGE value="Plotting changes" />
     <MESSAGE value="TMaze with one goal" />
@@ -1131,7 +1152,8 @@
     <MESSAGE value="Increased frequency of saving weights" />
     <MESSAGE value="TDEOC commit" />
     <MESSAGE value="Adding miniworld" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding miniworld" />
+    <MESSAGE value="Tf version error fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tf version error fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1362,7 +1384,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Terminations_Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep7.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Terminations_Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep8.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Terminations_Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep9.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Terminations_Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep11.png" />
@@ -1462,13 +1483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baselines/common/tf_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="211" column="24" selection-start-line="211" selection-start-column="24" selection-end-line="211" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -1476,6 +1490,20 @@
           <folding>
             <element signature="e#23#82#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/common/tf_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="209" column="40" selection-start-line="209" selection-start-column="29" selection-end-line="209" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/TDEOC/lib/python3.7/site-packages/tensorflow/core/protobuf/config_pb2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="521" lean-forward="true" selection-start-line="521" selection-end-line="521" />
         </state>
       </provider>
     </entry>

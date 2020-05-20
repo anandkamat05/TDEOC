@@ -210,7 +210,7 @@ def make_session(num_cpu):
     tf_config = tf.compat.v1.ConfigProto(
         inter_op_parallelism_threads=num_cpu,
         intra_op_parallelism_threads=num_cpu)
-    return tf.Session(config=tf_config)
+    return tf.compat.v1.Session(config=tf_config)
 
 def single_threaded_session():
     """Returns a session which will only use a single CPU"""

@@ -55,7 +55,7 @@ hidden_nonlinearity=tf.nn.relu,
 baseline = LinearFeatureBaseline(env_spec=env.spec)
 
 
-with tf.Session() as sess:
+with tf.compat.v1.Session() as sess:
     for env_name, env in envs:
 
         logger.log("Training Policy on %s" % env_name)

@@ -2,26 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c6e908-a5ed-488d-8665-d2161cb1dea9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PPOC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PPOC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines.egg-info/SOURCES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gym-miniworld-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/benchmark.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/benchmark.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gym-miniworld-master/docs/environments.md" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/docs/environments.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/experiments/autoenc.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/experiments/autoenc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/experiments/rand_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/experiments/rand_agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/oneroom.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/oneroom.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/sidewalk.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/sidewalk.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/tmaze.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/tmaze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/ymaze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_blue.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_blue.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_green.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_green.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_grey.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_grey.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_purple.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_purple.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_red.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_red.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_yellow.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/ball_yellow.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_blue.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_blue.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_green.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_green.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_grey.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_grey.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_purple.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_purple.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_red.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_red.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_yellow.obj" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/meshes/key_yellow.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/miniworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/miniworld.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/textures/asphalt_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/textures/asphalt_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/textures/chars/ch_w_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/textures/chars/ch_w_12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/textures/concrete_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/textures/concrete_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/textures/drywall_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/textures/drywall_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/images/ymaze_0.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gym-miniworld-master/manual_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/manual_control.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-miniworld-master/run_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-miniworld-master/run_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,11 +52,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="496" column="21" selection-start-line="496" selection-start-column="21" selection-end-line="496" selection-end-column="21" />
+            <state relative-caret-position="1155">
+              <caret line="487" selection-start-line="487" selection-end-line="487" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
               </folding>
@@ -58,10 +65,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baselines/common/tf_util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="211" column="24" selection-start-line="211" selection-start-column="24" selection-end-line="211" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="66" column="61" selection-start-line="64" selection-start-column="4" selection-end-line="66" selection-end-column="61" />
+            <state relative-caret-position="32">
+              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+              <folding>
+                <element signature="e#23#82#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>frame_buffer.get_depth_map</find>
-      <find>render_top</find>
       <find>gen_seg</find>
       <find>usertext</find>
       <find>ice</find>
@@ -119,6 +136,8 @@
       <find>option</find>
       <find>num_options</find>
       <find>act</find>
+      <find>ConfigProto()</find>
+      <find>tf.ConfigProto(</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/baselines/OC_learning_alpha</dir>
@@ -131,8 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gym-extensions-master/gym_extensions/continuous/mujoco/modified_ant.py" />
-        <option value="$PROJECT_DIR$/gym-extensions-master/gym_extensions/continuous/mujoco/modified_walker2d.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC/run_mujoco.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC_term/pposgd_simple.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC_term/run_mujoco.py" />
@@ -182,13 +199,15 @@
         <option value="$PROJECT_DIR$/baselines/DEOC_onlytermination/pposgd_simple.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/common/tf_util.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="72" />
     <option name="y" value="27" />
-    <option name="width" value="951" />
+    <option name="width" value="924" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -657,21 +676,7 @@
       <workItem from="1589609041566" duration="1865000" />
       <workItem from="1589953339396" duration="811000" />
       <workItem from="1589954277886" duration="8539000" />
-      <workItem from="1589963393311" duration="1962000" />
-    </task>
-    <task id="LOCAL-00161" summary="Increase resolution of top render view">
-      <created>1577829528019</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1577829528020</updated>
-    </task>
-    <task id="LOCAL-00162" summary="Plot episode trajectories for miniworld experiments">
-      <created>1577844989854</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1577844989854</updated>
+      <workItem from="1589963393311" duration="6876000" />
     </task>
     <task id="LOCAL-00163" summary="Miniworld hyperparameters in PPOC">
       <created>1577845357057</created>
@@ -1002,21 +1007,35 @@
       <option name="project" value="LOCAL" />
       <updated>1589962896530</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="Adding miniworld">
+      <created>1589965633934</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1589965633935</updated>
+    </task>
+    <task id="LOCAL-00211" summary="Adding miniworld">
+      <created>1589965683537</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1589965683537</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1427730000" />
+    <option name="totallyTimeSpent" value="1432644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="27" width="1848" height="1053" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12430633" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.120976694" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991699" weight="0.46753246" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991699" weight="0.33260632" />
       <window_info anchor="bottom" x="857" y="71" width="1038" height="993" id="Debug" order="3" weight="0.23326133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1025,9 +1044,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.20842333" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008301" side_tool="true" weight="0.29805616" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2455404" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="File Transfer" order="13" visible="true" weight="0.23773174" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.24536532" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3293348" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.25408942" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1111,7 +1130,6 @@
       <path value="$PROJECT_DIR$/baselines" />
       <path value="$PROJECT_DIR$/gym-extensions-multitask" />
     </ignored-roots>
-    <MESSAGE value="Avoid overwritting file" />
     <MESSAGE value="Added tmaze env to plot" />
     <MESSAGE value="Plotting terminations" />
     <MESSAGE value="Plotting changes" />
@@ -1136,7 +1154,8 @@
     <MESSAGE value="Avoid duplicated while loading weights" />
     <MESSAGE value="Increased frequency of saving weights" />
     <MESSAGE value="TDEOC commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="TDEOC commit" />
+    <MESSAGE value="Adding miniworld" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding miniworld" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1301,7 +1320,7 @@
     <SUITE FILE_PATH="coverage/PPOC$run_mujoco__5_.coverage" NAME="run_mujoco (5) Coverage Results" MODIFIED="1578883127003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination_diversity" />
     <SUITE FILE_PATH="coverage/PPOC$run_atari.coverage" NAME="run_atari Coverage Results" MODIFIED="1578927424333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination_diversity" />
     <SUITE FILE_PATH="coverage/PPOC$wall_envs.coverage" NAME="wall_envs Coverage Results" MODIFIED="1573623558511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gym-extensions-master/gym_extensions/continuous/mujoco" />
-    <SUITE FILE_PATH="coverage/Diversity_Enriched_OC_master$run_mujoco__2_.coverage" NAME="run_mujoco (2) Coverage Results" MODIFIED="1589554560150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/Termination_DEOC" />
+    <SUITE FILE_PATH="coverage/Diversity_Enriched_OC_master$run_mujoco__2_.coverage" NAME="run_mujoco (2) Coverage Results" MODIFIED="1589978484800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/Termination_DEOC" />
     <SUITE FILE_PATH="coverage/PPOC$ant_custom_env.coverage" NAME="ant_custom_env Coverage Results" MODIFIED="1570423549243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/OC_miniworld" />
     <SUITE FILE_PATH="coverage/PPOC$run_robotics.coverage" NAME="run_robotics Coverage Results" MODIFIED="1578942548326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination" />
   </component>
@@ -1410,13 +1429,6 @@
     <entry file="file://$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/oneroom.py" />
     <entry file="file://$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/tmaze.py" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/nohup.out" />
-    <entry file="file://$PROJECT_DIR$/baselines/common/tf_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3417">
-          <caret line="207" column="24" selection-start-line="207" selection-start-column="21" selection-end-line="207" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination/run_robotics.py" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination/pposgd_simple.py" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination/run_atari_miniworld.py" />
@@ -1456,18 +1468,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="496" column="21" selection-start-line="496" selection-start-column="21" selection-end-line="496" selection-end-column="21" />
+        <state relative-caret-position="1155">
+          <caret line="487" selection-start-line="487" selection-end-line="487" />
           <folding>
             <element signature="e#0#74#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="66" column="61" selection-start-line="64" selection-start-column="4" selection-end-line="66" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -1477,6 +1482,23 @@
           <caret line="76" column="17" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="17" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/common/tf_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="211" column="24" selection-start-line="211" selection-start-column="24" selection-end-line="211" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+          <folding>
+            <element signature="e#23#82#0" expanded="true" />
           </folding>
         </state>
       </provider>

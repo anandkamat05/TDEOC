@@ -674,7 +674,7 @@ def lengths_to_mask(lengths_b, max_length):
 def in_session(f):
     @functools.wraps(f)
     def newfunc(*args, **kwargs):
-        with tf.Session():
+        with tf.compat.v1.Session():
             f(*args, **kwargs)
     return newfunc
 

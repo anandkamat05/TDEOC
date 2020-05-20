@@ -25,7 +25,7 @@ def custom_train(algo, sess=None):
     """
     created_session = True if (sess is None) else False
     if sess is None:
-        sess = tf.Session()
+        sess = tf.compat.v1.Session()
         sess.__enter__()
 
     rollout_cache = []

@@ -52,7 +52,7 @@ class MpiAdam(object):
 @U.in_session
 def test_MpiAdam():
     np.random.seed(0)
-    tf.random.set_seed()(0)
+    tf.random.set_seed(0)
     
     a = tf.Variable(np.random.randn(3).astype('float32'))
     b = tf.Variable(np.random.randn(2,5).astype('float32'))
@@ -66,7 +66,7 @@ def test_MpiAdam():
     for i in range(10):
         print(i,do_update())
 
-    tf.random.set_seed()(0)
+    tf.random.set_seed(0)
     tf.get_default_session().run(tf.global_variables_initializer())
 
     var_list = [a,b]

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@sftp://akamat5@garden-path.cs.mcgill.ca:22/home/ml/akamat5/anaconda3/envs/PPOC_2/bin/python3.7">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$/baselines/OC_miniworld" remote-root="/home/ml/akamat5/PycharmProjects/PPOC/baselines/OC_miniworld" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>

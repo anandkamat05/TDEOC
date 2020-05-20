@@ -1,0 +1,46 @@
+Follow these steps to set up a virtual environment to run our algorithms. We use conda environments here.
+
+1) Install Mujoco (https://github.com/openai/mujoco-py)
+
+2) Create the conda environment from the yml file
+
+		conda env create -f environment.yml
+
+3) Activate the conda environment
+	
+		conda activate DEOC
+
+4) Install baselines through the setup file in the project folder
+
+		pip install -e .
+
+5) Install gym-extensions through the setup file in the gym-extensions-master folder
+
+		cd gym-extensions-master
+		pip install -e .
+
+6) Install gym-miniworld through the setup file in the gym-miniworld-master folder
+
+		git clone https://github.com/maximecb/gym-miniworld.git
+		cd gym-miniworld-master
+		pip install -e .
+
+** Before running experiments, please consult the hyperparameters we provide in the Appendix
+
+7) For four-rooms task:
+	
+		cd TDEOC_fourrooms
+		python TDEOC_Tabular.py --tdeoc
+
+8) For Mujoco (and TMaze transfer) tasks:
+	
+		cd baselines/Termination_DEOC
+
+		python run_mujoco.py --env='Walker2d-v2' --tradeoff=0.2 --tdeoc
+
+9) For Miniworld tasks:
+	
+		cd baselines/Termination_DEOC
+
+		python run_atari_miniworld.py --env='MiniWorld-OneRoom-v0' --tradeoff=0.0 --tdeoc		
+	

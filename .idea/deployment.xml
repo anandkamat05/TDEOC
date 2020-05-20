@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Beluga + McGill" uploadOnCheckinGroup="Beluga + McGill" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" serverName="Beluga + McGill" autoUploadExternalChanges="true">
     <serverData>
-      <paths name="Beluga">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/projects/rpp-bengioy/kamatana/PPOC" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="Beluga cpu">
         <serverdata>
           <mappings>
             <mapping deploy="/projects/def-bengioy/kamatana/PPOC" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="Mila CLuster">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/PPOC" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

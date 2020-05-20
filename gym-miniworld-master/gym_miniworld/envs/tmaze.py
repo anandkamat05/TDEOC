@@ -9,10 +9,12 @@ class TMaze(MiniWorldEnv):
     Two hallways connected in a T-junction
     """
 
-    def __init__(self, **kwargs):
-        self.both = False
-        self.left=False
-        self.right=False
+    def __init__(
+        self,
+        goal_pos=None,
+        **kwargs
+    ):
+        self.goal_pos = goal_pos
 
         super().__init__(
             max_episode_steps=280,
@@ -35,19 +37,21 @@ class TMaze(MiniWorldEnv):
 
         # Add a box at a random end of the hallway
         self.box = Box(color='red')
-        if self.both:
-            self.box2 = Box(color='red')
-            self.place_entity(self.box, room=room2, min_z=room2.max_z - 2, max_z=room2.max_z - 2, min_x=room2.max_x - 2, max_x=room2.max_x - 2)
-            self.place_entity(self.box2, room=room2, max_z=room2.min_z + 2, min_z=room2.min_z + 2, max_x=room2.min_x + 2, min_x=room2.min_x + 2)
-        elif self.right:
-            self.place_entity(self.box, room=room2, min_z=room2.max_z - 2, max_z=room2.max_z - 2, min_x=room2.max_x - 2, max_x=room2.max_x - 2)
-        elif self.left:
-            self.place_entity(self.box, room=room2, max_z=room2.min_z + 2, min_z=room2.min_z + 2, max_x=room2.min_x + 2, min_x=room2.min_x + 2)
+
+        # Place the goal in the left or the right arm
+        if self.goal_pos != None:
+            self.place_entity(
+                self.box,
+                min_x=self.goal_pos[0],
+                max_x=self.goal_pos[0],
+                min_z=self.goal_pos[2],
+                max_z=self.goal_pos[2],
+            )
         else:
             if self.rand.bool():
-                self.place_entity(self.box, room=room2, min_z=room2.max_z - 2)
-            else:
                 self.place_entity(self.box, room=room2, max_z=room2.min_z + 2)
+            else:
+                self.place_entity(self.box, room=room2, min_z=room2.max_z - 2)
 
         # Choose a random room and position to spawn at
         self.place_agent(
@@ -58,31 +62,18 @@ class TMaze(MiniWorldEnv):
     def step(self, action):
         obs, reward, done, info = super().step(action)
 
-        if self.both:
-            if self.near(self.box) or self.near(self.box2):
-                reward = 1
-                done = True
-        else:
-            if self.near(self.box):
-                # reward =1
-                reward += self._reward()
-                done = True
+        if self.near(self.box):
+            reward += self._reward()
+            done = True
+
+        info['goal_pos'] = self.box.pos
 
         return obs, reward, done, info
 
-    def set_both(self):
-        self.both =True
+class TMazeLeft(TMaze):
+    def __init__(self):
+        super().__init__(goal_pos=[10, 0, -6])
 
-    def place_left(self):
-        if self.right:
-            self.right=False
-        if self.both:
-            self.both=False
-        self.left=True
-
-    def place_right(self):
-        if self.left:
-            self.left=False
-        if self.both:
-            self.both=False
-        self.right=True
+class TMazeRight(TMaze):
+    def __init__(self):
+        super().__init__(goal_pos=[10, 0, 6])

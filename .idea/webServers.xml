@@ -2,14 +2,6 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="b87637b4-21ac-427e-a303-597d6c7de381" name="Beluga" url="http://beluga.computecanada.ca">
-        <fileTransfer host="beluga.computecanada.ca" port="22" rootFolder="/home/kamatana" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
       <webServer id="3ac9891c-5a8f-436a-94a5-14869c140b27" name="akamat5@agent-server.cs.mcgill.ca:22" url="http:///">
         <fileTransfer host="garden-path.cs.mcgill.ca" port="22" rootFolder="/home/ml/akamat5" accessType="SFTP" authAgent="true">
           <option name="port" value="22" />
@@ -23,23 +15,13 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="f5653a37-3863-4137-9265-1c1e98fcc847" name="Mila CLuster" url="http://login-1.server.mila.quebec">
-        <fileTransfer host="login-1.server.mila.quebec" port="8001" rootFolder="/network/home/kamatana" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-          <option name="port" value="8001" />
-        </fileTransfer>
-      </webServer>
     </option>
     <groups>
       <group>
         <name>Beluga + McGill</name>
         <servers>
-          <name value="Beluga" />
           <name value="akamat5@agent-server.cs.mcgill.ca:22" />
           <name value="Beluga cpu" />
-          <name value="Mila CLuster" />
         </servers>
       </group>
     </groups>

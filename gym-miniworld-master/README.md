@@ -12,10 +12,6 @@ Contents:
 
 ## Introduction
 
-**Note that this environment is early in development. It's still incomplete and you may run into bugs.
-If you do run into problems, or if you want to request specific features, please open an issue
-on this repository. Your feedback helps me make this project better.**
-
 MiniWorld is a minimalistic 3D interior environment simulator for reinforcement
 learning &amp; robotics research. It can be used to simulate environments with
 rooms, doors, hallways and various objects (eg: office and home environments, mazes).
@@ -58,6 +54,8 @@ Please use this bibtex if you want to cite this repository in your publications:
 ```
 
 List of publications & submissions using MiniWorld (please open a pull request to add missing entries):
+- Temporal Abstraction with Interest Functions (Mila, Oct 2019, NeurIPS Deep RL Workshop 2019)
+- [Avoidance Learning Using Observational Reinforcement Learning](https://arxiv.org/abs/1909.11228) (Mila, McGill, Sept 2019)
 - [Visual Hindsight Experience Replay](https://arxiv.org/pdf/1901.11529.pdf) (Georgia Tech, UC Berkeley, Jan 2019)
 
 This simulator was created as part of work done at [Mila](https://mila.quebec/).
@@ -91,6 +89,9 @@ There is a simple UI application which allows you to control the simulation or r
 
 ```
 ./manual_control.py --env-name MiniWorld-Hallway-v0
+
+# Display an overhead view of the environment
+./manual_control.py --env-name MiniWorld-Hallway-v0 --top_view
 ```
 
 There is also a script to run automated tests (`run_tests.py`) and a script to gather performance metrics (`benchmark.py`).

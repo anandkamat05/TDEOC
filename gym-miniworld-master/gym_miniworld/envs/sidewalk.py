@@ -80,7 +80,6 @@ class Sidewalk(MiniWorldEnv):
             done = True
 
         if self.near(self.box):
-            # reward =1
             reward += self._reward()
             done = True
 

@@ -17,11 +17,11 @@ DEFAULT_WALL_HEIGHT=2.74
 TEX_DENSITY = 512
 
 def gen_texcs_wall(
-        tex,
-        min_x,
-        min_y,
-        width,
-        height
+    tex,
+    min_x,
+    min_y,
+    width,
+    height
 ):
     """
     Generate texture coordinates for a wall quad
@@ -46,8 +46,8 @@ def gen_texcs_wall(
     )
 
 def gen_texcs_floor(
-        tex,
-        poss
+    tex,
+    poss
 ):
     """
     Generate texture coordinates for the floor or ceiling
@@ -73,13 +73,13 @@ class Room:
     """
 
     def __init__(
-            self,
-            outline,
-            wall_height=DEFAULT_WALL_HEIGHT,
-            floor_tex='floor_tiles_bw',
-            wall_tex='concrete',
-            ceil_tex='concrete_tiles',
-            no_ceiling=False
+        self,
+        outline,
+        wall_height=DEFAULT_WALL_HEIGHT,
+        floor_tex='floor_tiles_bw',
+        wall_tex='concrete',
+        ceil_tex='concrete_tiles',
+        no_ceiling=False
     ):
         # The outlien should have shape Nx2
         assert len(outline.shape) == 2
@@ -138,16 +138,16 @@ class Room:
         self.neighbors = []
 
     def add_portal(
-            self,
-            edge,
-            start_pos=None,
-            end_pos=None,
-            min_x=None,
-            max_x=None,
-            min_z=None,
-            max_z=None,
-            min_y=0,
-            max_y=None
+        self,
+        edge,
+        start_pos=None,
+        end_pos=None,
+        min_x=None,
+        max_x=None,
+        min_z=None,
+        max_z=None,
+        min_y=0,
+        max_y=None
 
     ):
         """
@@ -265,12 +265,12 @@ class Room:
         self.wall_segs = []
 
         def gen_seg_poly(
-                edge_p0,
-                side_vec,
-                seg_start,
-                seg_end,
-                min_y,
-                max_y
+            edge_p0,
+            side_vec,
+            seg_start,
+            seg_end,
+            min_y,
+            max_y
         ):
             if seg_end == seg_start:
                 return
@@ -387,7 +387,7 @@ class Room:
         else:
             self.wall_texcs = np.array([]).reshape(0, 2)
 
-    def _render(self, no_floor_texture=None):
+    def _render(self):
         """
         Render the static elements of the room
         """
@@ -395,23 +395,13 @@ class Room:
         glColor3f(1, 1, 1)
 
         # Draw the floor
-        if (no_floor_texture):
-            glDisable(GL_TEXTURE_2D)
-            glColor3f(1.0, 1.0, 1.0)
-            glColor3f(1.0, 1.0, 1.0)
-        else:
-            glEnable(GL_TEXTURE_2D)
-            self.floor_tex.bind()
-
+        self.floor_tex.bind()
         glBegin(GL_POLYGON)
         glNormal3f(0, 1, 0)
         for i in range(self.floor_verts.shape[0]):
             glTexCoord2f(*self.floor_texcs[i, :])
             glVertex3f(*self.floor_verts[i, :])
         glEnd()
-
-        # if (no_floor_texture):
-        #     glEnable(GL_TEXTURE_2D)
 
         # Draw the ceiling
         if not self.no_ceiling:
@@ -464,14 +454,14 @@ class MiniWorldEnv(gym.Env):
         done = 7
 
     def __init__(
-            self,
-            max_episode_steps=1500,
-            obs_width=80,
-            obs_height=60,
-            window_width=800,
-            window_height=600,
-            params=DEFAULT_PARAMS,
-            domain_rand=False
+        self,
+        max_episode_steps=1500,
+        obs_width=80,
+        obs_height=60,
+        window_width=800,
+        window_height=600,
+        params=DEFAULT_PARAMS,
+        domain_rand=False
     ):
         # Action enumeration for this environment
         self.actions = MiniWorldEnv.Actions
@@ -504,8 +494,6 @@ class MiniWorldEnv(gym.Env):
         # Invisible window to render into (shadow OpenGL context)
         self.shadow_window = pyglet.window.Window(width=1, height=1, visible=False)
 
-        self.usertext = 0
-
         # Enable depth testing and backface culling
         glEnable(GL_DEPTH_TEST)
         glEnable(GL_CULL_FACE)
@@ -530,21 +518,9 @@ class MiniWorldEnv(gym.Env):
             y = window_height - (self.obs_disp_height + 19)
         )
 
-        self.user_text_label = pyglet.text.Label(
-            font_name="Arial",
-            font_size=14,
-            multiline=True,
-            width=400,
-            x=window_width + 5,
-            y=window_height - (self.obs_disp_height + 200)
-        )
-
         # Initialize the state
         self.seed()
         self.reset()
-
-    def set_usertxt(self, option):
-        self.usertext = option
 
     def close(self):
         pass
@@ -553,14 +529,11 @@ class MiniWorldEnv(gym.Env):
         self.rand = RandGen(seed)
         return [seed]
 
-    def reset(self, no_floor_texture=False):
+    def reset(self):
         """
         Reset the simulation at the start of a new episode
         This also randomizes many environment parameters (domain randomization)
         """
-
-        self.points = []
-        self.colors = []
 
         # Step count since episode start
         self.step_count = 0
@@ -610,9 +583,7 @@ class MiniWorldEnv(gym.Env):
             self._gen_static_data()
 
         # Pre-compile static parts of the environment into a display list
-        self._render_static(no_floor_texture=False, list_id=1)
-        self._render_static(no_floor_texture=True, list_id=2)
-
+        self._render_static()
 
         # Generate the first camera image
         obs = self.render_obs()
@@ -640,9 +611,9 @@ class MiniWorldEnv(gym.Env):
         """
 
         next_pos = (
-                self.agent.pos +
-                self.agent.dir_vec * fwd_dist +
-                self.agent.right_vec * fwd_drift
+            self.agent.pos +
+            self.agent.dir_vec * fwd_dist +
+            self.agent.right_vec * fwd_drift
         )
 
         if self.intersect(self.agent, next_pos, self.agent.radius):
@@ -745,18 +716,16 @@ class MiniWorldEnv(gym.Env):
         return obs, reward, done, {}
 
     def add_rect_room(
-            self,
-            min_x,
-            max_x,
-            min_z,
-            max_z,
-            **kwargs
+        self,
+        min_x,
+        max_x,
+        min_z,
+        max_z,
+        **kwargs
     ):
         """
         Create a rectangular room
         """
-
-        assert len(self.wall_segs) == 0, "cannot add rooms after static data is generated"
 
         # 2D outline coordinates of the room,
         # listed in counter-clockwise order when viewed from the top
@@ -771,23 +740,29 @@ class MiniWorldEnv(gym.Env):
             [min_x, max_z],
         ])
 
-        room = Room(
-            outline,
-            **kwargs,
-        )
+        return self.add_room(outline=outline, **kwargs)
+
+    def add_room(self, **kwargs):
+        """
+        Create a new room
+        """
+
+        assert len(self.wall_segs) == 0, "cannot add rooms after static data is generated"
+
+        room = Room(**kwargs)
         self.rooms.append(room)
 
         return room
 
     def connect_rooms(
-            self,
-            room_a,
-            room_b,
-            min_x=None,
-            max_x=None,
-            min_z=None,
-            max_z=None,
-            max_y=None
+        self,
+        room_a,
+        room_b,
+        min_x=None,
+        max_x=None,
+        min_z=None,
+        max_z=None,
+        max_y=None
     ):
         """
         Connect two rooms along facing edges
@@ -800,14 +775,14 @@ class MiniWorldEnv(gym.Env):
                 for idx_b in range(room_b.num_walls):
                     norm_b = room_b.edge_norms[idx_b]
 
-                    # Reject edges that are not facing the correct way
+                    # Reject edges that are not facing each other
                     if np.dot(norm_a, norm_b) > -0.9:
                         continue
 
                     dir = room_b.outline[idx_b] - room_a.outline[idx_a]
 
-                    # Reject edges that are not facing each other
-                    if np.dot(norm_a, dir) > 0:
+                    # Reject edges that are not touching
+                    if np.dot(norm_a, dir) > 0.05:
                         continue
 
                     return idx_a, idx_b
@@ -868,15 +843,15 @@ class MiniWorldEnv(gym.Env):
         room.add_portal(3, start_pos=0, end_pos=len_b)
 
     def place_entity(
-            self,
-            ent,
-            room=None,
-            pos=None,
-            dir=None,
-            min_x=None,
-            max_x=None,
-            min_z=None,
-            max_z=None
+        self,
+        ent,
+        room=None,
+        pos=None,
+        dir=None,
+        min_x=None,
+        max_x=None,
+        min_z=None,
+        max_z=None
     ):
         """
         Place an entity/object in the world.
@@ -932,13 +907,13 @@ class MiniWorldEnv(gym.Env):
         return ent
 
     def place_agent(
-            self,
-            room=None,
-            dir=None,
-            min_x=None,
-            max_x=None,
-            min_z=None,
-            max_z=None
+        self,
+        room=None,
+        dir=None,
+        min_x=None,
+        max_x=None,
+        min_z=None,
+        max_z=None
     ):
         """
         Place the agent in the environment at a random position
@@ -1036,7 +1011,7 @@ class MiniWorldEnv(gym.Env):
 
         return 1.0 - 0.2 * (self.step_count / self.max_episode_steps)
 
-    def _render_static(self, no_floor_texture, list_id):
+    def _render_static(self):
         """
         Render the static elements of the scene into a display list.
         Called once at the beginning of each episode.
@@ -1044,8 +1019,8 @@ class MiniWorldEnv(gym.Env):
 
         # TODO: manage this automatically
         # glIsList
-        glDeleteLists(list_id, 1);
-        glNewList(list_id, GL_COMPILE);
+        glDeleteLists(1, 1);
+        glNewList(1, GL_COMPILE);
 
         # Light position
         glLightfv(GL_LIGHT0, GL_POSITION, (GLfloat*4)(*self.light_pos + [1]))
@@ -1070,9 +1045,9 @@ class MiniWorldEnv(gym.Env):
         glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE)
 
         # Render the rooms
+        glEnable(GL_TEXTURE_2D)
         for room in self.rooms:
-            #room._render()
-            room._render(no_floor_texture)
+            room._render()
 
         # Render the static entities
         for ent in self.entities:
@@ -1082,10 +1057,9 @@ class MiniWorldEnv(gym.Env):
         glEndList()
 
     def _render_world(
-            self,
-            frame_buffer,
-            render_agent,
-            no_floor_texture=False
+        self,
+        frame_buffer,
+        render_agent
     ):
         """
         Render the world from a given camera position into a frame buffer,
@@ -1093,10 +1067,7 @@ class MiniWorldEnv(gym.Env):
         """
 
         # Call the display list for the static parts of the environment
-        if no_floor_texture:
-            glCallList(2)
-        else:
-            glCallList(1)
+        glCallList(1)
 
         # TODO: keep the non-static entities in a different list for efficiency?
         # Render the non-static entities
@@ -1181,23 +1152,9 @@ class MiniWorldEnv(gym.Env):
         ]
         glLoadMatrixf((GLfloat * len(m))(*m))
 
-        if len(self.points) > 0:
-            num_points = len(self.points) // 3
-            assert len(self.points) == len(self.colors)
-            assert len(self.points) > 0
-
-            glPointSize(10)
-            pyglet.graphics.draw(num_points, pyglet.gl.GL_POINTS,
-                                 ('v3f', self.points),
-                                 ('c3B', self.colors)
-                                 )
-
-
-
         return self._render_world(
             frame_buffer,
-            render_agent=True,
-            no_floor_texture=True,
+            render_agent=True
         )
 
     def render_obs(self, frame_buffer=None):
@@ -1262,22 +1219,102 @@ class MiniWorldEnv(gym.Env):
 
         return frame_buffer.get_depth_map(0.04, 100.0)
 
-    def add_point(self, point, option):
-        if option == 0:
-            color = [0, 0, 255] #yellow
-        elif option == 1:
-            color = [0, 255, 0]
-        else:
-            assert False, "unknown option"
+    def get_visible_ents(self):
+        """
+        Get a list of visible entities.
+        Uses OpenGL occlusion queries to approximate visibility.
+        :return: set of objects visible to the agent
+        """
 
-        # Make sure the position is above the floor (y=0)
-        point = [point[0], 1, point[2]]
+        # Allocate the occlusion query ids
+        num_ents = len(self.entities)
+        query_ids = (GLuint * num_ents)()
+        glGenQueries(num_ents, query_ids)
 
-        self.points += point
-        self.colors += color
+        # Switch to the default OpenGL context
+        # This is necessary on Linux Nvidia drivers
+        self.shadow_window.switch_to()
 
+        # Use the small observation frame buffer
+        frame_buffer = self.obs_fb
 
-    def render(self, mode='human', close=False):
+        # Bind the frame buffer before rendering into it
+        frame_buffer.bind()
+
+        # Clear the color and depth buffers
+        glClearColor(*self.sky_color, 1.0)
+        glClearDepth(1.0)
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
+
+        # Set the projection matrix
+        glMatrixMode(GL_PROJECTION)
+        glLoadIdentity()
+        gluPerspective(
+            self.agent.cam_fov_y,
+            frame_buffer.width / float(frame_buffer.height),
+            0.04,
+            100.0
+        )
+
+        # Setup the cameravisible objects
+        glMatrixMode(GL_MODELVIEW)
+        glLoadIdentity()
+        gluLookAt(
+            # Eye position
+            *self.agent.cam_pos,
+            # Target
+            *(self.agent.cam_pos + self.agent.cam_dir),
+            # Up vector
+            0, 1.0, 0.0
+        )
+
+        # Render the rooms, without texturing
+        glDisable(GL_TEXTURE_2D)
+        for room in self.rooms:
+            room._render()
+
+        # For each entity
+        for ent_idx, ent in enumerate(self.entities):
+            if ent is self.agent:
+                continue
+
+            glBeginQuery(GL_ANY_SAMPLES_PASSED, query_ids[ent_idx])
+            pos = ent.pos
+
+            #glColor3f(1, 0, 0)
+            drawBox(
+                x_min=pos[0] - 0.1,
+                x_max=pos[0] + 0.1,
+                y_min=pos[1],
+                y_max=pos[1] + 0.2,
+                z_min=pos[2] - 0.1,
+                z_max=pos[2] + 0.1
+            )
+
+            glEndQuery(GL_ANY_SAMPLES_PASSED)
+
+        vis_objs = set()
+
+        # Get query results
+        for ent_idx, ent in enumerate(self.entities):
+            if ent is self.agent:
+                continue
+
+            visible = (GLuint*1)(1)
+            glGetQueryObjectuiv(query_ids[ent_idx], GL_QUERY_RESULT, visible);
+
+            if visible[0] != 0:
+                vis_objs.add(ent)
+
+        # Free the occlusion query ids
+        glDeleteQueries(1, query_ids)
+
+        #img = frame_buffer.resolve()
+        #return img
+
+        return vis_objs
+
+    def render(self, mode='human', close=False, view='agent'):
         """
         Render the environment for human viewing
         """
@@ -1288,14 +1325,15 @@ class MiniWorldEnv(gym.Env):
             return
 
         # Render the human-view image
-        #img = self.render_obs(self.vis_fb)           #change this to get the obs vs top view
-        img = self.render_top_view(self.vis_fb)
+        assert view in ['agent', 'top']
+        if view == 'agent':
+            img = self.render_obs(self.vis_fb)
+        else:
+            img = self.render_top_view(self.vis_fb)
         img_width = img.shape[1]
         img_height = img.shape[0]
 
         if mode == 'rgb_array':
-            if hasattr(self, 'usertext'):
-                self.add_point(self.agent.pos,self.usertext)
             return img
 
         # Render the agent's view
@@ -1334,12 +1372,12 @@ class MiniWorldEnv(gym.Env):
         glOrtho(0, window_width, 0, window_height, 0, 10)
 
         # Draw the human render to the rendering window
-        img = np.ascontiguousarray(np.flip(img, axis=0))
+        img_flip = np.ascontiguousarray(np.flip(img, axis=0))
         img_data = pyglet.image.ImageData(
             img_width,
             img_height,
             'RGB',
-            img.ctypes.data_as(POINTER(GLubyte)),
+            img_flip.ctypes.data_as(POINTER(GLubyte)),
             pitch=img_width * 3,
         )
         img_data.blit(
@@ -1375,11 +1413,6 @@ class MiniWorldEnv(gym.Env):
         )
         self.text_label.draw()
 
-        if hasattr(self, 'usertext'):
-            self.user_text_label.text = "Option: %d" % self.usertext
-            self.user_text_label.draw()
-            # self.add_point(self.agent.pos,self.usertext)
-
         # Force execution of queued commands
         glFlush()
 
@@ -1389,4 +1422,4 @@ class MiniWorldEnv(gym.Env):
             self.window.flip()
             self.window.dispatch_events()
 
-        return None
+        return img

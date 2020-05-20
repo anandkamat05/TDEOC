@@ -259,7 +259,7 @@ def learn(env, policy_func, *,
 
     optim_batchsize_ideal = optim_batchsize 
     np.random.seed(seed)
-    tf.random.set_seed(seed)
+    tf.set_random_seed(seed)
     env.seed(seed)
 
     ### Book-keeping

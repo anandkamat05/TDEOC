@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c6e908-a5ed-488d-8665-d2161cb1dea9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/a2c/a2c.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/a2c/a2c.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/acktr/acktr_disc.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/acktr/acktr_disc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/acktr/run_mujoco.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/acktr/run_mujoco.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/tf_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/tf_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/baselines/common/tf_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/common/tf_util.py" afterDir="false" />
     </list>
@@ -53,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/anaconda3/envs/TDEOC/lib/python3.7/site-packages/tensorflow/core/protobuf/config_pb2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="521" lean-forward="true" selection-start-line="521" selection-end-line="521" />
+            <state relative-caret-position="183">
+              <caret line="529" column="32" lean-forward="true" selection-start-line="529" selection-start-column="32" selection-end-line="529" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -94,7 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pi.ter</find>
       <find>color</find>
       <find>add_point</find>
       <find>glcol</find>
@@ -124,6 +125,7 @@
       <find>tf.ConfigProto(</find>
       <find>configpr</find>
       <find>ConfigProto(</find>
+      <find>.Session(</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/baselines/OC_learning_alpha</dir>
@@ -136,9 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/baselines/ppo1/run_atari.py" />
-        <option value="$PROJECT_DIR$/baselines/ppo1/run_mujoco.py" />
-        <option value="$PROJECT_DIR$/baselines/ppo1/pposgd_simple.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC_termination_diversity_with_diversity_regularized/pposgd_simple.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC_termination_diversity_with_diversity_regularized/run_mujoco.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC_termination_diversity_robust/run_mujoco.py" />
@@ -185,6 +184,9 @@
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/deepq/simple.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/tf_test.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/a2c/a2c.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/acktr/acktr_disc.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/acktr/run_mujoco.py" />
         <option value="$PROJECT_DIR$/baselines/common/tf_util.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/tf_util.py" />
       </list>
@@ -673,14 +675,7 @@
       <workItem from="1589609041566" duration="1865000" />
       <workItem from="1589953339396" duration="811000" />
       <workItem from="1589954277886" duration="8539000" />
-      <workItem from="1589963393311" duration="9357000" />
-    </task>
-    <task id="LOCAL-00167" summary="Added better visualization for TMaze and OneRoom.&#10;Switched to continuous control for TMaze.">
-      <created>1578193752871</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1578193752872</updated>
+      <workItem from="1589963393311" duration="9735000" />
     </task>
     <task id="LOCAL-00168" summary="Fixed error for plotting tmaze">
       <created>1578195823995</created>
@@ -1018,11 +1013,18 @@
       <option name="project" value="LOCAL" />
       <updated>1589980199979</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="Tf version error fix">
+      <created>1589980943058</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1589980943058</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1435125000" />
+    <option name="totallyTimeSpent" value="1435503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="27" width="1848" height="1053" extended-state="6" />
@@ -1502,8 +1504,8 @@
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/TDEOC/lib/python3.7/site-packages/tensorflow/core/protobuf/config_pb2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="521" lean-forward="true" selection-start-line="521" selection-end-line="521" />
+        <state relative-caret-position="183">
+          <caret line="529" column="32" lean-forward="true" selection-start-line="529" selection-start-column="32" selection-end-line="529" selection-end-column="32" />
         </state>
       </provider>
     </entry>

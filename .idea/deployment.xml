@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Beluga + McGill" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" serverName="Beluga + McGill" uploadOnCheckinGroup="Beluga + McGill" autoUploadExternalChanges="true">
     <serverData>
       <paths name="Beluga cpu">
         <serverdata>

@@ -423,7 +423,7 @@ def render(run, episode, option_policies, policy, terminations, episode_plots_di
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--discount', help='Discount factor', type=float, default=0.99)
-    parser.add_argument('--lr_term', help="Termination gradient learning rate", type=float, default=5e-3)
+    parser.add_argument('--lr_term', help="Termination gradient learning rate", type=float, default=5e-2)
     parser.add_argument('--lr_intra', help="Intra-option gradient learning rate", type=float, default=1e-2)
     parser.add_argument('--lr_critic', help="Learning rate", type=float, default=5e-1)
     parser.add_argument('--lr_action_critic', help="Learning rate", type=float, default=5e-1)

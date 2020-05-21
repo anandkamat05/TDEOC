@@ -488,10 +488,13 @@ def learn(env, policy_func, *,
 
 
 
-        if iters_so_far % 100 == 0 and wsaves:
+        if iters_so_far % 5 == 0 and wsaves:
             print("weights are saved...")
-            filename =  dirname + '{}.ckpt'.format(iters_so_far)
+            filename =  dirname + '.ckpt'
             save_path = saver.save(U.get_session(),filename)
+            if iters_so_far % 500 == 0:
+                filename =  dirname + '{}.ckpt'.format(iters_so_far)
+                save_path = saver.save(U.get_session(),filename)
 
 
         min_batch= (160 if num_options<3 else 200) # Arbitrary

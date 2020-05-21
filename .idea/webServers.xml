@@ -11,7 +11,7 @@
         </fileTransfer>
       </webServer>
       <webServer id="3ac9891c-5a8f-436a-94a5-14869c140b27" name="akamat5@agent-server.cs.mcgill.ca:22" url="http:///">
-        <fileTransfer host="garden-path.cs.mcgill.ca" port="22" rootFolder="/home/ml/akamat5" accessType="SFTP" authAgent="true">
+        <fileTransfer host="agent-11.cs.mcgill.ca" port="22" rootFolder="/home/ml/akamat5" accessType="SFTP" authAgent="true">
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
@@ -21,6 +21,7 @@
         <name>Beluga + McGill</name>
         <servers>
           <name value="Beluga cpu" />
+          <name value="akamat5@agent-server.cs.mcgill.ca:22" />
         </servers>
       </group>
     </groups>

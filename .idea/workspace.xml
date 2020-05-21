@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c6e908-a5ed-488d-8665-d2161cb1dea9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/baselines.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/baselines.egg-info/requires.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC/pposgd_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC/pposgd_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC_term/pposgd_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC_term/pposgd_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC_termination_diversity/pposgd_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC_termination_diversity/pposgd_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC_termination_diversity_robust/pposgd_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC_termination_diversity_robust/pposgd_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/Maximum_entropy_soft_ppoc/pposgd_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/Maximum_entropy_soft_ppoc/pposgd_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/misc_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/misc_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/mpi_adam.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/mpi_adam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppo1/pposgd_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppo1/pposgd_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppoc_Interest_Functions/pposgd_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppoc_Interest_Functions/pposgd_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppoc_adding_options_interest/pposgd_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppoc_adding_options_interest/pposgd_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/common/misc_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/common/misc_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/common/mpi_adam.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/common/mpi_adam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="487" selection-start-line="487" selection-end-line="487" />
+            <state relative-caret-position="91">
+              <caret line="466" column="4" selection-start-line="466" selection-start-column="4" selection-end-line="466" selection-end-column="4" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
               </folding>
@@ -52,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+            <state relative-caret-position="340">
+              <caret line="58" column="85" selection-start-line="58" selection-start-column="85" selection-end-line="58" selection-end-column="85" />
               <folding>
                 <element signature="e#23#82#0" expanded="true" />
               </folding>
@@ -75,10 +65,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>glcol</find>
-      <find>iter</find>
-      <find>gpu</find>
-      <find>cpu</find>
       <find>termdi</find>
       <find>onlydi</find>
       <find>on</find>
@@ -105,6 +91,10 @@
       <find>tf.set</find>
       <find>set_seed()</find>
       <find>configpr</find>
+      <find>set_seed(</find>
+      <find>set_random_seed</find>
+      <find>min_batch</find>
+      <find>deoc</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/baselines/OC_learning_alpha</dir>
@@ -150,25 +140,25 @@
         <option value="$PROJECT_DIR$/gym-extensions-master/multitask_benchmarks/utils.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/deepq/simple.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/tf_test.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/a2c/a2c.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/acktr/acktr_disc.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/acktr/run_mujoco.py" />
         <option value="$PROJECT_DIR$/baselines/common/tf_util.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/tf_util.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/misc_util.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/Maximum_entropy_soft_ppoc/pposgd_simple.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppoc_adding_options_interest/pposgd_simple.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/mpi_adam.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC/pposgd_simple.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppo1/pposgd_simple.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppoc_Interest_Functions/pposgd_simple.py" />
         <option value="$PROJECT_DIR$/baselines/common/misc_util.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" />
-        <option value="$PROJECT_DIR$/baselines/common/mpi_adam.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC_term/pposgd_simple.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC_termination_diversity/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/misc_util.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC_termination_diversity_robust/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/common/mpi_adam.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppo1/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppoc_Interest_Functions/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/Maximum_entropy_soft_ppoc/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/common/mpi_adam.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppoc_adding_options_interest/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC_term/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" />
       </list>
     </option>
   </component>
@@ -200,7 +190,7 @@
               <item name="Diversity_Enriched_OC_master" type="b2602c69:ProjectViewProjectNode" />
               <item name="Diversity_Enriched_OC_master" type="462c0819:PsiDirectoryNode" />
               <item name="baselines" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="Termination_DEOC" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -220,7 +210,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/baselines/OC_miniworld" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -655,14 +645,10 @@
       <workItem from="1589609041566" duration="1865000" />
       <workItem from="1589953339396" duration="811000" />
       <workItem from="1589954277886" duration="8539000" />
-      <workItem from="1589963393311" duration="10326000" />
-    </task>
-    <task id="LOCAL-00170" summary="Fixed run file">
-      <created>1578208779995</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1578208779995</updated>
+      <workItem from="1589963393311" duration="13164000" />
+      <workItem from="1589996916897" duration="6160000" />
+      <workItem from="1590034516153" duration="593000" />
+      <workItem from="1590036669466" duration="858000" />
     </task>
     <task id="LOCAL-00171" summary="Remove scaling reward for TMaze task">
       <created>1578246430617</created>
@@ -1000,22 +986,28 @@
       <option name="project" value="LOCAL" />
       <updated>1589981536480</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="Tf version 1.15 set">
+      <created>1589983488798</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1589983488798</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1436094000" />
+    <option name="totallyTimeSpent" value="1446543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="27" width="1848" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.120976694" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10599334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991699" visible="true" weight="0.33260632" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991699" visible="true" weight="0.33260632" />
       <window_info anchor="bottom" x="857" y="71" width="1038" height="993" id="Debug" order="3" weight="0.23326133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1026,7 +1018,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008301" side_tool="true" weight="0.29805616" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.48854962" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3293348" />
-      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.25408942" />
+      <window_info anchor="bottom" id="File Transfer" order="13" visible="true" weight="0.25408942" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1109,8 +1101,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/baselines" />
       <path value="$PROJECT_DIR$/gym-extensions-multitask" />
+      <path value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines" />
     </ignored-roots>
-    <MESSAGE value="TMaze with one goal" />
     <MESSAGE value="Maxsteps tmaze back to 280" />
     <MESSAGE value="Sidewalk experiments" />
     <MESSAGE value="Increase max episode steps" />
@@ -1135,7 +1127,8 @@
     <MESSAGE value="Tf version error fix" />
     <MESSAGE value="tf.session update" />
     <MESSAGE value="tf random seed update" />
-    <option name="LAST_COMMIT_MESSAGE" value="tf random seed update" />
+    <MESSAGE value="Tf version 1.15 set" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tf version 1.15 set" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1300,7 +1293,7 @@
     <SUITE FILE_PATH="coverage/PPOC$run_mujoco__5_.coverage" NAME="run_mujoco (5) Coverage Results" MODIFIED="1578883127003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination_diversity" />
     <SUITE FILE_PATH="coverage/PPOC$run_atari.coverage" NAME="run_atari Coverage Results" MODIFIED="1578927424333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination_diversity" />
     <SUITE FILE_PATH="coverage/PPOC$wall_envs.coverage" NAME="wall_envs Coverage Results" MODIFIED="1573623558511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gym-extensions-master/gym_extensions/continuous/mujoco" />
-    <SUITE FILE_PATH="coverage/Diversity_Enriched_OC_master$run_mujoco__2_.coverage" NAME="run_mujoco (2) Coverage Results" MODIFIED="1589981804914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/Termination_DEOC" />
+    <SUITE FILE_PATH="coverage/Diversity_Enriched_OC_master$run_mujoco__2_.coverage" NAME="run_mujoco (2) Coverage Results" MODIFIED="1590038768467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/Termination_DEOC" />
     <SUITE FILE_PATH="coverage/PPOC$ant_custom_env.coverage" NAME="ant_custom_env Coverage Results" MODIFIED="1570423549243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/OC_miniworld" />
     <SUITE FILE_PATH="coverage/PPOC$run_robotics.coverage" NAME="run_robotics Coverage Results" MODIFIED="1578942548326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination" />
   </component>
@@ -1366,8 +1359,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Terminations_Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep9.png" />
-    <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Terminations_Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep11.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Terminations_Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep14.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep1.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep3.png" />
@@ -1385,13 +1376,7 @@
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_miniworld-oneroom-seed10_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep7.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_miniworld-oneroom-seed10_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep4.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_miniworld-oneroom-seed10_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep5.png" />
-    <entry file="file://$USER_HOME$/anaconda3/envs/PPOC_tf/lib/python3.7/site-packages/pyglet/gl/gl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/PPOC_tf/lib/python3.7/site-packages/pyglet/gl/gl.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1437,47 +1422,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/PPOC_tf/lib/python3.7/site-packages/scipy/special/_logsumexp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="131" column="4" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="76" column="17" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-          <folding>
-            <element signature="e#23#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baselines/common/misc_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/TDEOC/lib/python3.7/site-packages/tensorflow/core/protobuf/config_pb2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="520" lean-forward="true" selection-start-line="520" selection-end-line="520" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/PPOC_tf/lib/python3.7/site-packages/scipy/special/_logsumexp.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/TDEOC/lib/python3.7/site-packages/tensorflow/core/protobuf/config_pb2.py" />
     <entry file="file://$PROJECT_DIR$/baselines/common/tf_util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1485,12 +1431,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/TDEOC/lib/python3.7/site-packages/tensorflow_core/python/util/module_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="192" selection-start-line="192" selection-end-line="192" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/common/misc_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/TDEOC/lib/python3.7/site-packages/tensorflow_core/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="1349" selection-start-line="1349" selection-end-line="1349" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="487" selection-start-line="487" selection-end-line="487" />
+        <state relative-caret-position="91">
+          <caret line="466" column="4" selection-start-line="466" selection-start-column="4" selection-end-line="466" selection-end-column="4" />
           <folding>
             <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="58" column="85" selection-start-line="58" selection-start-column="85" selection-end-line="58" selection-end-column="85" />
+          <folding>
+            <element signature="e#23#82#0" expanded="true" />
           </folding>
         </state>
       </provider>

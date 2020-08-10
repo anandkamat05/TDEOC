@@ -4,6 +4,7 @@ import tensorflow as tf
 import gym
 from baselines.common.distributions import make_pdtype
 import numpy as np
+from scipy.stats import norm
 
 
 def dense3D2(x, size, name, option, num_options=1, weight_init=None, bias=True):
@@ -58,9 +59,9 @@ class MlpPolicy(object):
         for i in range(num_hid_layers):
             last_out = tf.nn.tanh(U.dense(last_out, hid_size, "polfc%i"%(i+1), weight_init=U.normc_initializer(1.0)))
         if gaussian_fixed_var and isinstance(ac_space, gym.spaces.Box):
-            mean = dense3D2(last_out, pdtype.param_shape()[0]//2, "polfinal", option, num_options=num_options, weight_init=U.normc_initializer(0.01))
-            logstd = tf.get_variable(name="logstd", shape=[num_options, 1, pdtype.param_shape()[0]//2], initializer=tf.zeros_initializer())
-            pdparam = U.concatenate([mean, mean * 0.0 + logstd[option[0]]], axis=1)
+            self.mean = dense3D2(last_out, pdtype.param_shape()[0]//2, "polfinal", option, num_options=num_options, weight_init=U.normc_initializer(0.01))
+            self.logstd = tf.get_variable(name="logstd", shape=[num_options, 1, pdtype.param_shape()[0]//2], initializer=tf.zeros_initializer())
+            pdparam = U.concatenate([self.mean, self.mean * 0.0 + self.logstd[option[0]]], axis=1)
         else:
             pdparam = U.dense(last_out, pdtype.param_shape()[0], "polfinal", U.normc_initializer(0.01))
 
@@ -74,7 +75,8 @@ class MlpPolicy(object):
 
         stochastic = tf.placeholder(dtype=tf.bool, shape=())
         ac = U.switch(stochastic, self.pd.sample(), self.pd.mode())
-        self._act = U.function([stochastic, ob, option], [ac, self.vpred, self.vpred_ent, last_out, logstd])
+        self._act = U.function([stochastic, ob, option], [ac, self.vpred, self.vpred_ent, last_out, self.logstd])
+        self._act_mean = U.function([stochastic, ob, option], [ac, self.vpred, self.vpred_ent, last_out, self.logstd, self.mean])
 
         self._get_v = U.function([ob, option], [self.vpred])
         self._get_v_ent = U.function([ob, option], [self.vpred_ent])  # Entropy value estimate
@@ -83,6 +85,20 @@ class MlpPolicy(object):
         self.get_vpred = U.function([ob, option], [self.vpred])
         self.get_vpred_ent = U.function([ob, option], [self.vpred_ent]) # Entropy value estimate
         self._get_op = U.function([ob], [self.op_pi])
+
+        self.action_prob = U.function([ob, option], [self.pd])
+
+    def get_action_prob(self, stochastic, ob, option1, option2):
+        probs = [[],[]]
+        ac1, _, _, _, logstd1, mean1 =  self._act_mean(stochastic, ob[None], [option1])
+        _, _, _, _, logstd2, mean2 =  self._act_mean(stochastic, ob[None], [option2])
+        std = [np.exp(logstd1[0])[0], np.exp(logstd2[0])[0]]
+        mean = [mean1[0], mean2[0]]
+        ac1 = ac1[0]
+        for i in range(2):
+            for j in range(len(ac1)):
+                probs[i].append(norm(mean[i][j], std[i][j]).pdf(ac1[j]))
+        return probs[0], probs[1]
 
 
     def act(self, stochastic, ob, option):

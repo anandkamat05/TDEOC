@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8c6e908-a5ed-488d-8665-d2161cb1dea9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+    <list default="true" id="b8c6e908-a5ed-488d-8665-d2161cb1dea9" name="Default Changelist" comment="Term lr update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" afterDir="false" />
     </list>
@@ -33,10 +32,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="466" column="4" selection-start-line="466" selection-start-column="4" selection-end-line="466" selection-end-column="4" />
+            <state relative-caret-position="-1343">
+              <caret line="104" column="62" selection-start-line="104" selection-start-column="62" selection-end-line="104" selection-end-column="62" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/miniworld.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="1401" column="28" lean-forward="true" selection-start-line="1401" selection-start-column="13" selection-end-line="1401" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="100" column="33" lean-forward="true" selection-start-line="90" selection-start-column="4" selection-end-line="100" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="58" column="85" selection-start-line="58" selection-start-column="85" selection-end-line="58" selection-end-column="85" />
+            <state relative-caret-position="390">
+              <caret line="67" column="115" selection-start-line="67" selection-start-column="115" selection-end-line="67" selection-end-column="115" />
               <folding>
                 <element signature="e#23#82#0" expanded="true" />
               </folding>
@@ -65,13 +85,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>termdi</find>
-      <find>onlydi</find>
-      <find>on</find>
-      <find>DEOC_termination_adv</find>
-      <find>DEOC_termination_val</find>
-      <find>render</find>
-      <find>Stats</find>
       <find>onlydiv</find>
       <find>wsaves</find>
       <find>run</find>
@@ -94,7 +107,14 @@
       <find>set_seed(</find>
       <find>set_random_seed</find>
       <find>min_batch</find>
+      <find>save_path</find>
       <find>deoc</find>
+      <find>pd</find>
+      <find>mean</find>
+      <find>log</find>
+      <find>set_usertxt</find>
+      <find>text</find>
+      <find>gen_</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/baselines/OC_learning_alpha</dir>
@@ -108,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/baselines/DEOC_termination_diversity/Tmaze/twod_tmaze.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC_termination_diversity/Vanilla_miniworld-oneroom-seed16_dc0.0_term_mult1.0_lr_mult1.0_2opts_results.csv" />
         <option value="$PROJECT_DIR$/baselines/DEOC_termination_diversity/twod_tmaze.py" />
         <option value="$PROJECT_DIR$/gym-extensions-master/gym_extensions/continuous/mujoco/wall_envs.py" />
@@ -122,7 +141,6 @@
         <option value="$PROJECT_DIR$/baselines/DEOC_termination/run_robotics.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC_termination/run_humanoid.py" />
         <option value="$PROJECT_DIR$/TDEOC_fourrooms/OC_entropy_tune.py" />
-        <option value="$PROJECT_DIR$/TDEOC_fourrooms/TDEOC_Tabular.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC_termination/run_atari_miniworld.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC_termination/run_mujoco.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC_termination/pposgd_simple.py" />
@@ -132,7 +150,6 @@
         <option value="$PROJECT_DIR$/TDEOC_fourrooms_onlydiv/TDEOC_Tabular.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC_onlytermination/run_mujoco.py" />
         <option value="$PROJECT_DIR$/baselines/DEOC_onlytermination/pposgd_simple.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py" />
         <option value="$PROJECT_DIR$/tf_test.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/gym-extensions-master/multitask_benchmarks/run_trpo.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/gym-extensions-master/multitask_benchmarks/utils.py" />
@@ -157,7 +174,10 @@
         <option value="$PROJECT_DIR$/baselines/common/mpi_adam.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppoc_adding_options_interest/pposgd_simple.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC_term/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/TDEOC_fourrooms/TDEOC_Tabular.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/run_atari_miniworld.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" />
       </list>
     </option>
@@ -174,6 +194,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,11 +213,21 @@
               <item name="baselines" type="462c0819:PsiDirectoryNode" />
               <item name="Termination_DEOC" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Diversity_Enriched_OC_master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diversity_Enriched_OC_master" type="462c0819:PsiDirectoryNode" />
+              <item name="gym-miniworld-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Diversity_Enriched_OC_master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diversity_Enriched_OC_master" type="462c0819:PsiDirectoryNode" />
+              <item name="gym-miniworld-master" type="462c0819:PsiDirectoryNode" />
+              <item name="gym_miniworld" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,7 +282,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run_mujoco (2)">
+  <component name="RunManager" selected="Python.run_atari_miniworld">
+    <configuration name="TDEOC_Tabular (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PPOC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TDEOC_fourrooms" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TDEOC_fourrooms/TDEOC_Tabular.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="TDEOC_Tabular" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PPOC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -282,12 +335,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/baselines/DEOC_termination" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/baselines/Termination_DEOC" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baselines/DEOC_termination/run_atari_miniworld.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baselines/Termination_DEOC/run_atari_miniworld.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -340,42 +393,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_mujoco" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PPOC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/baselines/DEOC_termination" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baselines/DEOC_termination/run_mujoco.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.run_atari_miniworld" />
-      <item itemvalue="Python.run_mujoco" />
-      <item itemvalue="Python.run_mujoco (1)" />
+      <item itemvalue="Python.TDEOC_Tabular (1)" />
       <item itemvalue="Python.TDEOC_Tabular" />
+      <item itemvalue="Python.run_mujoco (1)" />
       <item itemvalue="Python.run_mujoco (2)" />
+      <item itemvalue="Python.run_atari_miniworld" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_atari_miniworld" />
         <item itemvalue="Python.run_mujoco (2)" />
+        <item itemvalue="Python.TDEOC_Tabular (1)" />
         <item itemvalue="Python.run_mujoco (1)" />
         <item itemvalue="Python.TDEOC_Tabular" />
-        <item itemvalue="Python.run_mujoco" />
-        <item itemvalue="Python.run_atari_miniworld" />
       </list>
     </recent_temporary>
   </component>
@@ -648,21 +679,11 @@
       <workItem from="1589963393311" duration="13164000" />
       <workItem from="1589996916897" duration="6160000" />
       <workItem from="1590034516153" duration="593000" />
-      <workItem from="1590036669466" duration="858000" />
-    </task>
-    <task id="LOCAL-00171" summary="Remove scaling reward for TMaze task">
-      <created>1578246430617</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1578246430617</updated>
-    </task>
-    <task id="LOCAL-00172" summary="Rendering with trajectories - miniworld">
-      <created>1578289655945</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1578289655945</updated>
+      <workItem from="1590036669466" duration="3101000" />
+      <workItem from="1590160060972" duration="25000" />
+      <workItem from="1590825612160" duration="69000" />
+      <workItem from="1596880280537" duration="792000" />
+      <workItem from="1597045021609" duration="9742000" />
     </task>
     <task id="LOCAL-00173" summary="Rendering with trajectories - miniworld">
       <created>1578292968691</created>
@@ -993,22 +1014,37 @@
       <option name="project" value="LOCAL" />
       <updated>1589983488798</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="Weights save frequency changed">
+      <created>1590038970150</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1590038970150</updated>
+    </task>
+    <task id="LOCAL-00221" summary="Term lr update">
+      <created>1590087361487</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1590087361487</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1446543000" />
+    <option name="totallyTimeSpent" value="1459414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="27" width="1848" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10599334" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17924528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991699" visible="true" weight="0.33260632" />
-      <window_info anchor="bottom" x="857" y="71" width="1038" height="993" id="Debug" order="3" weight="0.23326133" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991699" visible="true" weight="0.35986915" />
+      <window_info anchor="bottom" x="857" y="71" width="1038" height="993" id="Debug" order="3" weight="0.36968374" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1016,9 +1052,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.20842333" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008301" side_tool="true" weight="0.29805616" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.48854962" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.26224157" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3293348" />
-      <window_info anchor="bottom" id="File Transfer" order="13" visible="true" weight="0.25408942" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.25408942" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1028,13 +1064,13 @@
       <window_info anchor="right" id="Remote Host" order="5" weight="0.32967034" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14148425" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17924528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991699" visible="true" weight="0.35529158" />
-      <window_info anchor="bottom" x="857" y="71" width="1038" height="993" id="Debug" order="3" weight="0.33158448" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991699" weight="0.33260632" />
+      <window_info active="true" anchor="bottom" x="857" y="71" width="1038" height="993" id="Debug" order="3" visible="true" weight="0.36968374" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1042,16 +1078,16 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.20842333" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008301" side_tool="true" weight="0.29805616" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2980063" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32937366" />
-      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.2339979" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.26224157" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3293348" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.25408942" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.31488654" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Remote Host" order="5" weight="0.32982844" />
+      <window_info anchor="right" id="Remote Host" order="5" weight="0.32967034" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1103,8 +1139,6 @@
       <path value="$PROJECT_DIR$/gym-extensions-multitask" />
       <path value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines" />
     </ignored-roots>
-    <MESSAGE value="Maxsteps tmaze back to 280" />
-    <MESSAGE value="Sidewalk experiments" />
     <MESSAGE value="Increase max episode steps" />
     <MESSAGE value="Revert back to annealing reward" />
     <MESSAGE value="Set certain parameters for miniworld runs" />
@@ -1128,7 +1162,9 @@
     <MESSAGE value="tf.session update" />
     <MESSAGE value="tf random seed update" />
     <MESSAGE value="Tf version 1.15 set" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tf version 1.15 set" />
+    <MESSAGE value="Weights save frequency changed" />
+    <MESSAGE value="Term lr update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Term lr update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1246,23 +1282,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py</url>
-          <line>106</line>
+          <line>122</line>
           <option name="timeStamp" value="237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py</url>
-          <line>136</line>
-          <option name="timeStamp" value="239" />
+          <line>206</line>
+          <option name="timeStamp" value="249" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="240" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="242" />
+          <url>file://$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py</url>
+          <line>208</line>
+          <option name="timeStamp" value="254" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1278,8 +1309,10 @@
     <SUITE FILE_PATH="coverage/PPOC$run_mujoco__1_.coverage" NAME="run_mujoco (1) Coverage Results" MODIFIED="1580154623741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_onlytermination" />
     <SUITE FILE_PATH="coverage/PPOC$OC_entropy_tune.coverage" NAME="OC_entropy_tune Coverage Results" MODIFIED="1578944079522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TDEOC_fourrooms" />
     <SUITE FILE_PATH="coverage/PPOC$run_mujoco__2_.coverage" NAME="run_mujoco (2) Coverage Results" MODIFIED="1572904071012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination_diversity_robust" />
+    <SUITE FILE_PATH="coverage/Diversity_Enriched_OC_master$run_atari_miniworld.coverage" NAME="run_atari_miniworld Coverage Results" MODIFIED="1597054621022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/Termination_DEOC" />
     <SUITE FILE_PATH="coverage/PPOC$results_plotter.coverage" NAME="results_plotter Coverage Results" MODIFIED="1559861541035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines" />
     <SUITE FILE_PATH="coverage/PPOC$TDEOC_Tabular.coverage" NAME="TDEOC_Tabular Coverage Results" MODIFIED="1579795789684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TDEOC_fourrooms_onlydiv" />
+    <SUITE FILE_PATH="coverage/Diversity_Enriched_OC_master$TDEOC_Tabular__1_.coverage" NAME="TDEOC_Tabular (1) Coverage Results" MODIFIED="1590086676020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TDEOC_fourrooms" />
     <SUITE FILE_PATH="coverage/PPOC$run_atari__1_.coverage" NAME="run_atari (1) Coverage Results" MODIFIED="1567635512608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/ppo1" />
     <SUITE FILE_PATH="coverage/PPOC$run_mujoco.coverage" NAME="run_mujoco Coverage Results" MODIFIED="1579118685454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination" />
     <SUITE FILE_PATH="coverage/PPOC$run_mujoco__4_.coverage" NAME="run_mujoco (4) Coverage Results" MODIFIED="1572294529745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/ppoc_Interest_Functions" />
@@ -1293,7 +1326,7 @@
     <SUITE FILE_PATH="coverage/PPOC$run_mujoco__5_.coverage" NAME="run_mujoco (5) Coverage Results" MODIFIED="1578883127003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination_diversity" />
     <SUITE FILE_PATH="coverage/PPOC$run_atari.coverage" NAME="run_atari Coverage Results" MODIFIED="1578927424333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination_diversity" />
     <SUITE FILE_PATH="coverage/PPOC$wall_envs.coverage" NAME="wall_envs Coverage Results" MODIFIED="1573623558511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gym-extensions-master/gym_extensions/continuous/mujoco" />
-    <SUITE FILE_PATH="coverage/Diversity_Enriched_OC_master$run_mujoco__2_.coverage" NAME="run_mujoco (2) Coverage Results" MODIFIED="1590038768467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/Termination_DEOC" />
+    <SUITE FILE_PATH="coverage/Diversity_Enriched_OC_master$run_mujoco__2_.coverage" NAME="run_mujoco (2) Coverage Results" MODIFIED="1597051383536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/Termination_DEOC" />
     <SUITE FILE_PATH="coverage/PPOC$ant_custom_env.coverage" NAME="ant_custom_env Coverage Results" MODIFIED="1570423549243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/OC_miniworld" />
     <SUITE FILE_PATH="coverage/PPOC$run_robotics.coverage" NAME="run_robotics Coverage Results" MODIFIED="1578942548326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination" />
   </component>
@@ -1359,10 +1392,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Terminations_Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep14.png" />
-    <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep1.png" />
-    <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep3.png" />
-    <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep2.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep4.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep5.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Terminations/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep5.png" />
@@ -1387,21 +1416,12 @@
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination/assets/twod_tmaze.xml" />
     <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1562781590/cv2/cv2/__init__.py" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/DEOC_miniworld-tmaze-seed10_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv" />
-    <entry file="file://$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/miniworld.py" />
     <entry file="file://$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/sidewalk.py" />
-    <entry file="file://$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/oneroom.py" />
     <entry file="file://$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/tmaze.py" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/nohup.out" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination/run_robotics.py" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination/pposgd_simple.py" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination/run_atari_miniworld.py" />
-    <entry file="file://$PROJECT_DIR$/TDEOC_fourrooms/TDEOC_Tabular.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9656">
-          <caret line="590" selection-start-line="590" selection-end-line="590" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination/run_humanoid.py" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination/mlp_policy.py" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination/run_mujoco.py" />
@@ -1424,23 +1444,6 @@
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/PPOC_tf/lib/python3.7/site-packages/scipy/special/_logsumexp.py" />
     <entry file="file://$USER_HOME$/anaconda3/envs/TDEOC/lib/python3.7/site-packages/tensorflow/core/protobuf/config_pb2.py" />
-    <entry file="file://$PROJECT_DIR$/baselines/common/tf_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="209" column="40" selection-start-line="209" selection-start-column="29" selection-end-line="209" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/TDEOC/lib/python3.7/site-packages/tensorflow_core/python/util/module_wrapper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1462,20 +1465,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TDEOC_fourrooms/TDEOC_Tabular.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="427" column="62" selection-start-line="427" selection-start-column="62" selection-end-line="427" selection-end-column="62" />
+          <folding>
+            <element signature="e#39#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/common/tf_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="339" column="4" selection-start-line="339" selection-start-column="4" selection-end-line="339" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-257691290/numpy/core/_multiarray_umath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="100" column="33" lean-forward="true" selection-start-line="90" selection-start-column="4" selection-end-line="100" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/common/distributions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="135" column="35" lean-forward="true" selection-start-line="133" selection-start-column="15" selection-end-line="135" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/envs/oneroom.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/miniworld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="1401" column="28" lean-forward="true" selection-start-line="1401" selection-start-column="13" selection-end-line="1401" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="466" column="4" selection-start-line="466" selection-start-column="4" selection-end-line="466" selection-end-column="4" />
+        <state relative-caret-position="-1343">
+          <caret line="104" column="62" selection-start-line="104" selection-start-column="62" selection-end-line="104" selection-end-column="62" />
           <folding>
             <element signature="e#0#74#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_atari_miniworld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/cnn_policy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="58" column="85" selection-start-line="58" selection-start-column="85" selection-end-line="58" selection-end-column="85" />
+        <state relative-caret-position="390">
+          <caret line="67" column="115" selection-start-line="67" selection-start-column="115" selection-end-line="67" selection-end-column="115" />
           <folding>
             <element signature="e#23#82#0" expanded="true" />
           </folding>

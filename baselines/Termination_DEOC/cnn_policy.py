@@ -22,9 +22,9 @@ def dense3D2(x, size, name, option, num_options=1, weight_init=None, bias=True):
 class CnnPolicy(object):
     recurrent = False
     def __init__(self, name, *args, **kwargs):
-        with tf.variable_scope(name):
+        with tf.compat.v1.variable_scope(name):
             self._init(*args, **kwargs)
-            self.scope = tf.get_variable_scope().name
+            self.scope = tf.compat.v1.get_variable_scope().name
 
     def _init(self, ob_space, ac_space, hid_size, num_hid_layers, gaussian_fixed_var=True, num_options=2,dc=0, kind='small'):
         assert isinstance(ob_space, gym.spaces.Box)
@@ -137,9 +137,9 @@ class CnnPolicy(object):
 
 
     def get_variables(self):
-        return tf.get_collection(tf.GraphKeys.GLOBAL_VARIABLES, self.scope)
+        return tf.compat.v1.get_collection(tf.compat.v1.GraphKeys.GLOBAL_VARIABLES, self.scope)
     def get_trainable_variables(self):
-        return tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, self.scope)
+        return tf.compat.v1.get_collection(tf.compat.v1.GraphKeys.TRAINABLE_VARIABLES, self.scope)
     def get_initial_state(self):
         return []
 

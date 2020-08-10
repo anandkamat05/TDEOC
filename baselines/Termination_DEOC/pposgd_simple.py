@@ -100,12 +100,12 @@ def traj_segment_generator(pi, env, horizon, stochastic, num_options,saves,resul
 
 
         ob, rew, new, _ = env.step(ac)
-        if not hasattr(env,'NAME'):
-            if env.spec.id[:-3].lower()[:9] == "miniworld":
-                env.text_label.text += "Option_" + str(option)
+        # if not hasattr(env,'NAME'):
+        #     if env.spec.id[:-3].lower()[:9] == "miniworld":
+        #         env.text_label.text += "Option_" + str(option)
         # env.render()
 
-        _, prew = gen_pseudo_reward(pi, ob, num_options, stochastic)
+        prew = gen_pseudo_reward(pi, ob, num_options, stochastic)
         if hasattr(env,'NAME'):
             prew = prew*1e-2
         elif env.spec.id[:-3].lower()[:9] == "miniworld":
@@ -164,7 +164,7 @@ def traj_segment_generator(pi, env, horizon, stochastic, num_options,saves,resul
             option = pi.get_option(ob)
         t += 1
 
-def gen_pseudo_reward(pi, ob, num_options, stochastic=True):
+def gen_pseudo_reward(pi, ob, num_options, stochastic=True, cross=False):
     if num_options==1:
         return 0
     else:
@@ -175,7 +175,7 @@ def gen_pseudo_reward(pi, ob, num_options, stochastic=True):
             sampled_op2 = combinations[i][1]
             if isinstance(pi, cnn.CnnPolicy):
                 x1, _, _, _= pi.act(stochastic, ob, sampled_op1)
-                # x2, _, _, _ = pi.act(stochastic, ob, sampled_op2)
+                x2, _, _, _ = pi.act(stochastic, ob, sampled_op2)
                 logits_op1 = pi.get_logits(stochastic, ob, sampled_op1)[0]
                 logits_op2 = pi.get_logits(stochastic, ob, sampled_op2)[0]
                 # pd_op1 = softmax(logits_op1)
@@ -183,10 +183,10 @@ def gen_pseudo_reward(pi, ob, num_options, stochastic=True):
                 # cum_entropy += -np.sum(pd_op1*np.log(pd_op2))/(10*pd_op1.shape[0])
 
                 one_hot_actions = tf.one_hot(x1, tf.convert_to_tensor(logits_op1).get_shape().as_list()[-1])
-                x1_prob = np.exp(-1*tf.nn.softmax_cross_entropy_with_logits(
+                x1_prob = np.exp(-1*tf.nn.softmax_cross_entropy_with_logits_v2(
                     logits=logits_op1,
                     labels=one_hot_actions).eval())
-                x2_prob = np.exp(-1*tf.nn.softmax_cross_entropy_with_logits(
+                x2_prob = np.exp(-1*tf.nn.softmax_cross_entropy_with_logits_v2(
                     logits=logits_op2,
                     labels=one_hot_actions).eval())
                 joint_entropy += np.multiply(x1_prob, x2_prob)
@@ -206,7 +206,7 @@ def gen_pseudo_reward(pi, ob, num_options, stochastic=True):
 
         cum_entropy = cum_entropy/len(combinations)
         joint_entropy = joint_entropy/ len(combinations)
-        return cum_entropy*2, joint_entropy*4
+        return cum_entropy*2 if cross else joint_entropy*4
 
 
 def add_vtarg_and_adv(seg, gamma, lam, deoc=False, tradeoff=0.1):
@@ -408,7 +408,7 @@ def learn(env, policy_func, *,
     termloss = U.function(([ob, option, term_adv, diversity] if tdeoc else [ob, option, term_adv]), [U.flatgrad(term_loss, var_list)]) # Since we will use a different step size.
     adam = MpiAdam(var_list, epsilon=adam_epsilon)
 
-    assign_old_eq_new = U.function([],[], updates=[tf.assign(oldv, newv)
+    assign_old_eq_new = U.function([],[], updates=[tf.compat.v1.assign(oldv, newv)
         for (oldv, newv) in zipsame(oldpi.get_variables(), pi.get_variables())])
     compute_losses = U.function([ob, ac, atarg, atarg_ent, ret, ret_ent, lrmult, option], losses)
 
@@ -417,7 +417,7 @@ def learn(env, policy_func, *,
     adam.sync()
 
 
-    saver = tf.train.Saver(max_to_keep=10000)
+    saver = tf.compat.v1.train.Saver(max_to_keep=10000)
     dirname = results_name+'_weights/'
 
     if epoch >= 0:

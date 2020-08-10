@@ -203,7 +203,7 @@ def minimize_and_clip(optimizer, objective, var_list, clip_val=10):
 
 def get_session():
     """Returns recently made Tensorflow session"""
-    return tf.get_default_session()
+    return tf.compat.v1.get_default_session()
 
 def make_session(num_cpu):
     """Returns a session that will use <num_cpu> CPU's only"""
@@ -220,8 +220,8 @@ ALREADY_INITIALIZED = set()
 
 def initialize():
     """Initialize all the uninitialized variables in the global scope."""
-    new_variables = set(tf.global_variables()) - ALREADY_INITIALIZED
-    get_session().run(tf.variables_initializer(new_variables))
+    new_variables = set(tf.compat.v1.global_variables()) - ALREADY_INITIALIZED
+    get_session().run(tf.compat.v1.variables_initializer(new_variables))
     ALREADY_INITIALIZED.update(new_variables)
 
 def eval(expr, feed_dict=None):
@@ -449,7 +449,7 @@ class _MemFriendlyFunction(object):
             slice_vals = [v[i_start:builtins.min(i_start + self.batch_size, n)] for v in data_vals]
             for (var, val) in zip(self.data_inputs, slice_vals):
                 feed_dict[var] = val
-            results = tf.get_default_session().run(self.outputs, feed_dict=feed_dict)
+            results = tf.compat.v1.get_default_session().run(self.outputs, feed_dict=feed_dict)
             if i_start == 0:
                 sum_results = results
             else:
@@ -590,7 +590,7 @@ class SetFromFlat(object):
         assigns = []
         for (shape, v) in zip(shapes, var_list):
             size = intprod(shape)
-            assigns.append(tf.assign(v, tf.reshape(theta[start:start + size], shape)))
+            assigns.append(tf.compat.v1.assign(v, tf.reshape(theta[start:start + size], shape)))
             start += size
         self.op = tf.group(*assigns)
 
@@ -686,7 +686,7 @@ def get_placeholder(name, dtype, shape):
         assert dtype1 == dtype and shape1 == shape
         return out
     else:
-        out = tf.placeholder(dtype=dtype, shape=shape, name=name)
+        out = tf.compat.v1.placeholder(dtype=dtype, shape=shape, name=name)
         _PLACEHOLDER_CACHE[name] = (out, dtype, shape)
         return out
 

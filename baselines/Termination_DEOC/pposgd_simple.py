@@ -105,7 +105,7 @@ def traj_segment_generator(pi, env, horizon, stochastic, num_options,saves,resul
         #         env.text_label.text += "Option_" + str(option)
         # env.render()
 
-        _, prew = gen_pseudo_reward(pi, ob, num_options, stochastic)
+        prew = gen_pseudo_reward(pi, ob, num_options, stochastic, cross=False)
         if hasattr(env,'NAME'):
             prew = prew*1e-2
         elif env.spec.id[:-3].lower()[:9] == "miniworld":
@@ -164,7 +164,7 @@ def traj_segment_generator(pi, env, horizon, stochastic, num_options,saves,resul
             option = pi.get_option(ob)
         t += 1
 
-def gen_pseudo_reward(pi, ob, num_options, stochastic=True):
+def gen_pseudo_reward(pi, ob, num_options, stochastic=True, cross=True):
     if num_options==1:
         return 0
     else:
@@ -178,35 +178,35 @@ def gen_pseudo_reward(pi, ob, num_options, stochastic=True):
                 x2, _, _, _ = pi.act(stochastic, ob, sampled_op2)
                 logits_op1 = pi.get_logits(stochastic, ob, sampled_op1)[0]
                 logits_op2 = pi.get_logits(stochastic, ob, sampled_op2)[0]
-                # pd_op1 = softmax(logits_op1)
-                # pd_op2 = softmax(logits_op2)
-                # cum_entropy += -np.sum(pd_op1*np.log(pd_op2))/(10*pd_op1.shape[0])
-
-                one_hot_actions = tf.one_hot(x1, tf.convert_to_tensor(logits_op1).get_shape().as_list()[-1])
-                x1_prob = np.exp(-1*tf.nn.softmax_cross_entropy_with_logits_v2(
-                    logits=logits_op1,
-                    labels=one_hot_actions).eval())
-                x2_prob = np.exp(-1*tf.nn.softmax_cross_entropy_with_logits_v2(
-                    logits=logits_op2,
-                    labels=one_hot_actions).eval())
-                joint_entropy += np.multiply(x1_prob, x2_prob)
+                pd_op1 = softmax(logits_op1)
+                pd_op2 = softmax(logits_op2)
+                pd_op1 = np.clip(pd_op1,1e-20, 1.0)
+                pd_op2 = np.clip(pd_op2,1e-20, 1.0)
+                if cross:
+                    cum_entropy += -np.sum(pd_op1*np.log(pd_op2))/10*pd_op1.shape[0]
+                else:
+                    joint = np.multiply(pd_op1, pd_op2)
+                    joint_entropy += -np.sum(joint*np.log(joint))/10*joint.shape[0]
 
             else:
-                # x1, _, _, _,_ = pi.act(stochastic, ob, sampled_op1)
-                # x2, _, _, _, _ = pi.act(stochastic, ob, sampled_op2)
-                # x1 = softmax(x1)
-                # x2 = softmax(x2)
-                # x1 = np.clip(x1,1e-20, 1.0)
-                # x2 = np.clip(x2,1e-20, 1.0)
-                # cum_entropy += -np.sum(x1*np.log(x2))/x1.shape[0]
-
-                x1_prob, x2_prob = pi.get_action_prob(stochastic, ob, sampled_op1, sampled_op2)
-                joint = np.multiply(x1_prob, x2_prob)
-                joint_entropy += -np.sum(joint*np.log(joint))/joint.shape[0]
+                if cross:
+                    x1, _, _, _,_ = pi.act(stochastic, ob, sampled_op1)
+                    x2, _, _, _, _ = pi.act(stochastic, ob, sampled_op2)
+                    x1 = softmax(x1)
+                    x2 = softmax(x2)
+                    x1 = np.clip(x1,1e-20, 1.0)
+                    x2 = np.clip(x2,1e-20, 1.0)
+                    cum_entropy += -np.sum(x1*np.log(x2))/x1.shape[0]
+                else:
+                    x1_prob, x2_prob = pi.get_action_prob(stochastic, ob, sampled_op1, sampled_op2)
+                    x1_prob = np.clip(x1_prob,1e-20, 1.0)
+                    x2_prob = np.clip(x2_prob,1e-20, 1.0)
+                    joint = np.multiply(x1_prob, x2_prob)
+                    joint_entropy += -np.sum(joint*np.log(joint))/joint.shape[0]
 
         cum_entropy = cum_entropy/len(combinations)
         joint_entropy = joint_entropy/ len(combinations)
-        return cum_entropy*2, joint_entropy*4
+        return cum_entropy*2 if cross else joint_entropy*4
 
 
 def add_vtarg_and_adv(seg, gamma, lam, deoc=False, tradeoff=0.1):

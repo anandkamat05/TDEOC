@@ -105,7 +105,7 @@ def traj_segment_generator(pi, env, horizon, stochastic, num_options,saves,resul
         #         env.text_label.text += "Option_" + str(option)
         # env.render()
 
-        prew = gen_pseudo_reward(pi, ob, num_options, stochastic)
+        _, prew = gen_pseudo_reward(pi, ob, num_options, stochastic)
         if hasattr(env,'NAME'):
             prew = prew*1e-2
         elif env.spec.id[:-3].lower()[:9] == "miniworld":
@@ -164,7 +164,7 @@ def traj_segment_generator(pi, env, horizon, stochastic, num_options,saves,resul
             option = pi.get_option(ob)
         t += 1
 
-def gen_pseudo_reward(pi, ob, num_options, stochastic=True, cross=False):
+def gen_pseudo_reward(pi, ob, num_options, stochastic=True):
     if num_options==1:
         return 0
     else:
@@ -206,7 +206,7 @@ def gen_pseudo_reward(pi, ob, num_options, stochastic=True, cross=False):
 
         cum_entropy = cum_entropy/len(combinations)
         joint_entropy = joint_entropy/ len(combinations)
-        return cum_entropy*2 if cross else joint_entropy*4
+        return cum_entropy*2, joint_entropy*4
 
 
 def add_vtarg_and_adv(seg, gamma, lam, deoc=False, tradeoff=0.1):

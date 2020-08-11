@@ -96,8 +96,7 @@ class MlpPolicy(object):
         mean = [mean1[0], mean2[0]]
         ac1 = ac1[0]
         for i in range(2):
-            for j in range(len(ac1)):
-                probs[i].append(norm(mean[i][j], std[i][j]).pdf(ac1[j]))
+            probs[i] = norm(mean[i], std[i]).pdf(ac1)
         return probs[0], probs[1]
 
 

@@ -200,9 +200,9 @@ def gen_pseudo_reward(pi, ob, num_options, stochastic=True, cross=True):
                 else:
                     x1_prob, x2_prob = pi.get_action_prob(stochastic, ob, sampled_op1, sampled_op2)
                     x1_prob = np.clip(x1_prob,1e-20, 1.0)
-                    x2_prob = np.clip(x2_prob,1e-20, 1.0)
+                    x2_prob = np.clip(x2_prob, 1e-20, 1.0)
                     joint = np.multiply(x1_prob, x2_prob)
-                    joint_entropy += -np.sum(joint*np.log(joint))/joint.shape[0]
+                    joint_entropy += np.clip(-np.sum(joint*np.log(joint))/joint.shape[0], a_min=1e-20, a_max=None)
 
         cum_entropy = cum_entropy/len(combinations)
         joint_entropy = joint_entropy/ len(combinations)

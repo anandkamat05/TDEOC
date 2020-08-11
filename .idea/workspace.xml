@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b8c6e908-a5ed-488d-8665-d2161cb1dea9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/run_atari_miniworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/run_atari_miniworld.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,10 +32,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="107" column="77" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
+            <state relative-caret-position="172">
+              <caret line="204" selection-start-line="204" selection-end-line="204" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+              <folding>
+                <element signature="e#23#82#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,26 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baselines/common/distributions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="128" column="23" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/cnn_policy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_atari_miniworld.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="83" column="116" selection-start-line="83" selection-start-column="116" selection-end-line="83" selection-end-column="116" />
+            <state relative-caret-position="-2522">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -166,12 +173,12 @@
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/ppoc_adding_options_interest/pposgd_simple.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/src/baselines/baselines/DEOC_term/pposgd_simple.py" />
         <option value="$PROJECT_DIR$/TDEOC_fourrooms/TDEOC_Tabular.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/cnn_policy.py" />
         <option value="$PROJECT_DIR$/baselines/common/tf_util.py" />
-        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" />
         <option value="$PROJECT_DIR$/baselines/Termination_DEOC/run_atari_miniworld.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py" />
       </list>
     </option>
   </component>
@@ -187,7 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,29 +210,13 @@
               <item name="Diversity_Enriched_OC_master" type="b2602c69:ProjectViewProjectNode" />
               <item name="Diversity_Enriched_OC_master" type="462c0819:PsiDirectoryNode" />
               <item name="baselines" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diversity_Enriched_OC_master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diversity_Enriched_OC_master" type="462c0819:PsiDirectoryNode" />
-              <item name="baselines" type="462c0819:PsiDirectoryNode" />
               <item name="Termination_DEOC" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diversity_Enriched_OC_master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diversity_Enriched_OC_master" type="462c0819:PsiDirectoryNode" />
-              <item name="gym-miniworld-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diversity_Enriched_OC_master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diversity_Enriched_OC_master" type="462c0819:PsiDirectoryNode" />
-              <item name="gym-miniworld-master" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_miniworld" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run_atari_miniworld">
+  <component name="RunManager" selected="Python.run_mujoco (2)">
     <configuration name="TDEOC_Tabular (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PPOC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -401,8 +391,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run_atari_miniworld" />
         <item itemvalue="Python.run_mujoco (2)" />
+        <item itemvalue="Python.run_atari_miniworld" />
         <item itemvalue="Python.TDEOC_Tabular (1)" />
         <item itemvalue="Python.run_mujoco (1)" />
         <item itemvalue="Python.TDEOC_Tabular" />
@@ -683,14 +673,9 @@
       <workItem from="1590825612160" duration="69000" />
       <workItem from="1596880280537" duration="792000" />
       <workItem from="1597045021609" duration="9866000" />
-      <workItem from="1597059373750" duration="6334000" />
-    </task>
-    <task id="LOCAL-00176" summary="Change diversity multiplier to 1e-2 for tmaze">
-      <created>1578322035103</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1578322035103</updated>
+      <workItem from="1597059373750" duration="8191000" />
+      <workItem from="1597114516944" duration="797000" />
+      <workItem from="1597150490361" duration="1789000" />
     </task>
     <task id="LOCAL-00177" summary="Mujoco Transfer tasks">
       <created>1578323392259</created>
@@ -1028,23 +1013,29 @@
       <option name="project" value="LOCAL" />
       <updated>1597062771627</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="Joint entropy metrics speed fix">
+      <created>1597070984116</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1597070984116</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1465872000" />
+    <option name="totallyTimeSpent" value="1470315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="27" width="1848" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16259712" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16592675" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991699" visible="true" weight="0.35986915" />
-      <window_info anchor="bottom" x="857" y="71" width="1038" height="993" id="Debug" order="3" weight="0.36968374" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991699" visible="true" weight="0.24754634" />
+      <window_info anchor="bottom" x="857" y="71" width="1038" height="993" id="Debug" order="3" weight="0.37840787" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1282,13 +1273,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py</url>
-          <line>122</line>
+          <line>121</line>
           <option name="timeStamp" value="237" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py</url>
-          <line>497</line>
-          <option name="timeStamp" value="256" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1321,7 +1307,7 @@
     <SUITE FILE_PATH="coverage/PPOC$run_mujoco__5_.coverage" NAME="run_mujoco (5) Coverage Results" MODIFIED="1578883127003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination_diversity" />
     <SUITE FILE_PATH="coverage/PPOC$run_atari.coverage" NAME="run_atari Coverage Results" MODIFIED="1578927424333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination_diversity" />
     <SUITE FILE_PATH="coverage/PPOC$wall_envs.coverage" NAME="wall_envs Coverage Results" MODIFIED="1573623558511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gym-extensions-master/gym_extensions/continuous/mujoco" />
-    <SUITE FILE_PATH="coverage/Diversity_Enriched_OC_master$run_mujoco__2_.coverage" NAME="run_mujoco (2) Coverage Results" MODIFIED="1597062254625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/Termination_DEOC" />
+    <SUITE FILE_PATH="coverage/Diversity_Enriched_OC_master$run_mujoco__2_.coverage" NAME="run_mujoco (2) Coverage Results" MODIFIED="1597152465019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/Termination_DEOC" />
     <SUITE FILE_PATH="coverage/PPOC$ant_custom_env.coverage" NAME="ant_custom_env Coverage Results" MODIFIED="1570423549243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/OC_miniworld" />
     <SUITE FILE_PATH="coverage/PPOC$run_robotics.coverage" NAME="run_robotics Coverage Results" MODIFIED="1578942548326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselines/DEOC_termination" />
   </component>
@@ -1387,7 +1373,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep4.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep5.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Terminations/DEOC_tmaze-seed17_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep5.png" />
     <entry file="file://$PROJECT_DIR$/baselines/DEOC_termination_diversity/Trajectories/DEOC_miniworld-oneroom-seed10_tradeoff0.0_dc0.0_OnlyDiv_term_mult1.0_lr_mult0.333333333_2opts_results.csv/0/Ep1.png" />
@@ -1487,26 +1472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="67" column="116" selection-start-line="67" selection-start-column="116" selection-end-line="67" selection-end-column="116" />
-          <folding>
-            <element signature="e#23#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gym-miniworld-master/gym_miniworld/miniworld.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -1514,34 +1479,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baselines/common/distributions.py">
+    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/cnn_policy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="128" column="23" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="23" />
+        <state relative-caret-position="1462">
+          <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/cnn_policy.py">
+    <entry file="file://$PROJECT_DIR$/requirement.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_atari_miniworld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+        <state relative-caret-position="484">
+          <caret line="83" column="116" selection-start-line="83" selection-start-column="116" selection-end-line="83" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/common/distributions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2522">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/mlp_policy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/pposgd_simple.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="107" column="77" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
+        <state relative-caret-position="172">
+          <caret line="204" selection-start-line="204" selection-end-line="204" />
           <folding>
             <element signature="e#0#74#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_atari_miniworld.py">
+    <entry file="file://$PROJECT_DIR$/baselines/Termination_DEOC/run_mujoco.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="83" column="116" selection-start-line="83" selection-start-column="116" selection-end-line="83" selection-end-column="116" />
+        <state relative-caret-position="482">
+          <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+          <folding>
+            <element signature="e#23#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

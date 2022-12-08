@@ -17,7 +17,7 @@ azure-storage==0.20.3
 -e git+https://github.com/anandkamat05/TDEOC.git@f73b7a7b8d5b9afcc9034d93e5dbc6937ec1c345#egg=baselines
 box2d-py==2.3.8
 cached-property==1.5.1
-certifi==2020.4.5.1
+certifi==2022.12.7
 cffi==1.14.0
 chardet==3.0.4
 cycler==0.10.0
